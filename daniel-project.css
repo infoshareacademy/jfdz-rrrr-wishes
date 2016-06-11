@@ -1,0 +1,13 @@
+body{
+    margin:0;
+}
+header{
+    background-color:blue;
+    height:200px;
+    width:auto;
+}
+footer{
+    background-color: red;
+    height:100px;
+    width:400px;
+}

@@ -1,7 +1,7 @@
 body
 {
     /* Background pattern from subtlepatterns.com */
-    background-image: url(img/tlo.png);
+    background-image: url(img/background-image-body.png);
     font-size: 20px;
     margin: 0;
 
@@ -45,11 +45,11 @@ li
     width: 200px;
     border-radius: 5px;
     display: inline-block;
-    background-color: red;
+    background-color: lightgray;
     padding: 15px;
     letter-spacing: 1px;
-    border:2px solid orange;
-    box-shadow:0 0 20px orange; /*cien wokol okregu*/
+    border:2px solid black;
+    box-shadow:0 0 20px black; /*cien wokol okregu*/
 
 }
 
@@ -83,7 +83,10 @@ section
 
 .title2
 {
-    width: 100%;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 form
@@ -150,6 +153,79 @@ input[type=submit]:hover
     background-color: #37b93d;
 }
 
+#square1
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow:0 0 20px black; /*cien wokol okregu*/
+    width: 416px;
+    height: 436px;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 30px;
+
+    background-color: lightgray;
+}
+
+#square2
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow:0 0 20px black; /*cien wokol okregu*/
+    width: 416px;
+    height: 436px;
+    float: right;
+    margin-right:100px;
+    margin-bottom: 10px;
+    padding: 30px;
+    text-align: center;
+
+    background-color: lightgray;
+}
+
+#square3
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow:0 0 20px black; /*cien wokol okregu*/
+    width: 416px;
+    height: 436px;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    padding: 30px;
+    text-align: center;
+
+    background-color: lightgray;
+}
+
+
+#square4
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow:0 0 20px black; /*cien wokol okregu*/
+    width: 416px;
+    height: 436px;
+    float: right;
+    margin-right:100px;
+    margin-bottom: 10px;
+    padding: 30px;
+    text-align: center;
+
+    background-color: lightgray;
+}
+
+
+table td
+{
+    border: 2px solid black;
+    padding: 10px;
+    text-align: justify;
+}
+
 table
 {
     width: 1000px;
@@ -160,13 +236,6 @@ table
     border-collapse: collapse; /*po usunieciu linie w tabeli beda podwojne*/
 }
 
-table td
-{
-    border: 2px solid black;
-    padding: 10px;
-    text-align: justify;
-}
-
 
 footer
 {
@@ -175,4 +244,9 @@ footer
     padding-bottom: 20px;
     background-color: brown;
 
+}
+
+p
+{
+    text-align: justify;
 }

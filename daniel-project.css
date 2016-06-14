@@ -266,6 +266,11 @@ footer
 
 }
 
+#fb:hover
+{
+    background-color:#5779c4 ;
+}
+
 #tw
 {
     width: 100px;
@@ -276,6 +281,11 @@ footer
     margin-left: 10px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+#tw:hover
+{
+    background-color: #2084c2;
 }
 
 #ins
@@ -290,10 +300,18 @@ footer
 
 }
 
+#ins:hover
+{
+    background-color: #4740ca;
+}
+
 
 
 .copy-rrrr
 {
     text-align: center;
+    font-family: 'Lora', arial, serif;
+    color:white;
+    font-weight:400;
 }
 

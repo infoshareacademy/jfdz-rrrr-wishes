@@ -8,6 +8,7 @@
 .right{
     float:right;
 }
+/*####*/
 .wrapper{position:relative;}
 #banner {
    background-image:url('images/background-image-banner.jpg');
@@ -82,12 +83,36 @@ header{
 }
 .banner-title .button{
     padding-left:5px;
+    padding-right:27px;
+    line-height:17px;
+    font-size:15px;
     text-decoration:none;
     color: #fce7f3;
     margin-right:60px;
+    background-image:url('images/icon-arrow-right-white.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:right center;
 }
 .banner-title .button:hover{
     color:white;
 }
+/*################### description section #####################*/
 
-
+#description{
+    height:600px;
+    width:auto;
+    background-color:#A8D0E6;
+    }
+/*############### features section ####################*/
+#features{
+    height:600px;
+    width:auto;
+    background-color:#F76C6C;
+}
+/*############### the next section ####################*/
+#sample-section{
+    height:600px;
+    width:auto;
+    background-color:#24305E;
+}

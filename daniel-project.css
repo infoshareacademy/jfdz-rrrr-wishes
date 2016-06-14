@@ -236,17 +236,64 @@ table
     border-collapse: collapse; /*po usunieciu linie w tabeli beda podwojne*/
 }
 
-
-footer
-{
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: brown;
-
-}
-
 p
 {
     text-align: justify;
+
 }
+
+footer
+{
+    width: 1349px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: brown;
+    text-align: center;
+
+}
+
+#fb
+{
+    width: 100px;
+    height: 100px;
+    background-color: #4668b3;
+    float: right;
+    margin-right: 50px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+#tw
+{
+    width: 100px;
+    height: 100px;
+    background-color: #3095d3;
+    float: right;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#ins
+{
+    width: 100px;
+    height: 100px;
+    background-color: #5851db;
+    float: right;
+    margin-top: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+
+
+.copy-rrrr
+{
+    text-align: center;
+}
+

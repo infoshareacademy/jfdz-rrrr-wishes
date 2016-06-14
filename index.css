@@ -4,7 +4,7 @@
 }
 .wrapper{position:relative;}
 #banner {
-   background-image:url('images/background-image-banner-2.jpg');
+   background-image:url('images/background-image-features.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:top center;
@@ -24,57 +24,57 @@
     padding-left:100px;
 }
 .banner-title h3 {
-    font-family: 'raleway', arial, sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    padding-left:110px;
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 35px;
+    padding-left: 110px;
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    font-family: 'Lora',arial,serif;
+    font-weight: 400;
+    font-style: italic;
+
 }
 
 header{
     position:fixed;
     z-index:1;
-    background-color:#1F414A;
     height:75px;
     width:100%;
-    opacity:0.6;
-    box-sizing:border-box;
-    box-shadow:0px 12px 20px -4px rgba(14,34,56,0.6);
-}
+   }
 /*######## logo###########*/
 .logo{
-    background-image:url('images/icon-logo-banner-white.png');
+    background-image:url('images/icon-logo-banner-2.png');
     background-repeat:no-repeat;
     background-size:contain;
     background-position:left center;
-    color:white;
+    color: white;
     font-family:'Lora',arial,serif;
-    font-size:20px;
-    line-height:20px;
+    font-weight:400;
+    font-size:22px;
+    line-height:30px;
     float:left;
-    height:17px;
-    padding-left:35px;
+    height:30px;
+    padding-left:48px;
     margin:23px;
     letter-spacing:2px;
-    text-shadow: 0 0 4px #fffefc;
-
 }
 /*########## navigation ###############*/
-nav a {
+nav a  {
     margin-top:30px;
     text-decoration:none;
     float:right;
     text-transform: uppercase;
-    color: #fffefc;
-    font-weight: 200;
+    color: #404040;
+    font-weight: 400;
     font-size: 12px;
     letter-spacing: 1px;
     font-family: 'Raleway',sans-serif,arial;
     margin-right: 50px;
     overflow: hidden;
-    opacity:0.7;
-
+    opacity:0.8;
 }
 nav a:hover{
-    opacity:1;
+    color:#FC7753;
 }
 /*####### ########*/

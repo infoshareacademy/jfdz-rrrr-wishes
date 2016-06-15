@@ -1,12 +1,12 @@
 Font license info
 
 
-## Entypo
+## Brandico
 
-   Copyright (C) 2012 by Daniel Bruce
+   (C) 2012 by Vitaly Puzrin
 
-   Author:    Daniel Bruce
+   Author:    Crowdsourced, for Fontello project
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.entypo.com
+   Homepage:  
 
 

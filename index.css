@@ -1,47 +1,29 @@
-/*#### Global classes ####*/
+/*######## Global classes #########*/
 .clear{
     clear:both;
+   }
+.left{
+    float:left;
 }
+.right{
+    float:right;
+}
+/*####*/
 .wrapper{position:relative;}
 #banner {
-   background-image:url('images/background-image-features.jpg');
+   background-image:url('images/background-image-banner.jpg');
     background-repeat:no-repeat;
     background-size:cover;
-    background-position:top center;
-    height:900px;
+    background-position:center center;
+    height:800px;
     width:100%;
 }
-.banner-title{
-    margin:0 auto;
-    padding-top:370px;
-    text-align:left;
-    font-family: 'Lora', arial, serif;
-    color:white;
-    font-weight:400;
-    }
-.banner-title h1{
-    font-size:70px;
-    padding-left:100px;
-}
-.banner-title h3 {
-    font-size: 17px;
-    line-height: 26px;
-    margin-bottom: 35px;
-    padding-left: 110px;
-    border-width: 0 0 0 3px;
-    border-style: solid;
-    font-family: 'Lora',arial,serif;
-    font-weight: 400;
-    font-style: italic;
-
-}
-
 header{
     position:fixed;
     z-index:1;
     height:75px;
     width:100%;
-   }
+}
 /*######## logo###########*/
 .logo{
     background-image:url('images/icon-logo-banner-2.png');
@@ -53,14 +35,13 @@ header{
     font-weight:400;
     font-size:22px;
     line-height:30px;
-    float:left;
     height:30px;
     padding-left:48px;
     margin:23px;
     letter-spacing:2px;
 }
 /*########## navigation ###############*/
-nav a  {
+.menu a{
     margin-top:30px;
     text-decoration:none;
     float:right;
@@ -74,7 +55,101 @@ nav a  {
     overflow: hidden;
     opacity:0.8;
 }
-nav a:hover{
+.menu a:hover{
     color:#FC7753;
 }
-/*####### ########*/
+/*########### banner ###############*/
+.banner-title{
+    margin:0 auto;
+    padding-top:310px;
+    text-align:left;
+    font-family: 'Lora', arial, serif;
+    color:white;
+    font-weight:400;
+    padding-left:100px;
+    }
+.banner-title h1{
+    font-size:70px;
+    line-height:70px;
+    padding-bottom:20px;
+}
+.banner-title h4 {
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-style: italic;
+    padding-left:5px;
+}
+.banner-title .button{
+    padding-left:5px;
+    padding-right:27px;
+    line-height:17px;
+    font-size:15px;
+    text-decoration:none;
+    color: #fce7f3;
+    margin-right:60px;
+    background-image:url('images/icon-arrow-right-white.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:right center;
+}
+.banner-title .button:hover{
+    color:white;
+}
+/*################### description section #####################*/
+
+#description{
+    height:500px;
+    width:100%;
+    background-color:#EFE1E7;/*#A8D0E6*/
+    display:inline-block;
+    color:#24305E;
+    font-family:'Lora',Baskerville, serif;
+    box-shadow: 0px 10px 19px -9px rgba(87,66,87,1);
+    }
+#description h2{
+    font-size:50px;
+    line-height:60px;
+    padding-top:154px;
+    padding-left:100px;
+    box-sizing:border-box;
+}
+#description h4{
+    font-size: 17px;
+    line-height: 30px;
+    margin-right:70px;
+    padding-top: 170px;
+    font-weight:400;
+    font-style: italic;
+}
+#description .separator{
+    float:left;
+    border-style: solid;
+    border-width:2px;
+    border-color:#24305E;
+    border-left-style:none;
+    border-right-style:none;
+    border-bottom-style:none;
+    width:50px;
+    margin-left:20px;
+    margin-top:188px;
+   }
+/*############### features section ####################*/
+#features{
+    margin-top:-4px;
+    height:600px;
+    width:auto;
+    background-color:#F76C6C;
+    background-image:url('images/background-image-banner-4.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    opacity:0.8;
+}
+/*############### the next section ####################*/
+#contact{
+    height:200px;
+    width:auto;
+    background-color:#24305E;
+}

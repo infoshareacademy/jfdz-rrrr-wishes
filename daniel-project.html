@@ -71,6 +71,30 @@
         -->
         <!-- Vol.2-->
         <div id="square1">
+            <!--- uwaga na id, lepiej użyć klasy. Można tą strukturę uprościć.
+            Dajesz <div class="person daniel"><h2>Daniel</h2><p>description</p></div>
+             <div class="person marta"><h2>Marta</h2><p>description</p></div>
+              <div class="person marcin"><h2>Marcin</h2><p>description</p></div>
+
+            css:
+         .person{
+         background-repeat: no-repeat;
+         background-position: top center;/* jeżeli zdjęcie będzie mniejsze niż cała sekcja to efekt będzie taki,
+         background-size:contain;           że mamy zdjęcie i fragment pola z div w którym będzie h2 i p */
+         height:200px;
+         width:150px;
+         /* do tego jakieś marginy i paddingi */
+         }
+         .daniel{
+         background-image:url('images/person-image-team-daniel.png');
+         }
+         .Marta{
+         background-image:url('images/person-image-team-marta.png');
+         }
+         .Marcin{
+         background-image:url('images/person-image-team-marcin.png');
+         }
+--->
 
             <img src="img/FOTO1.png" alt="Imie i Nazwisko zdjecie">
 
@@ -99,7 +123,10 @@
 
 
 
-
+<!--- uważaj na takie przerwy między sekcjami.
+Czasami strona podczas renderowania strony
+,może wczytać losowy biały znak, który spowoduje
+np: że między sekcjami pojawi się biała luka wysokości 1-3px.--->
 
 
 
@@ -110,8 +137,21 @@
 
 
 
-<footer>
-
+<footer> <!--- brakuje 4 linków a href  dotyczących nawigacji wyłącznie na stronie--->
+         <!--- Postaraj się używać klas zamiast id. Warto też uprościć budowę w html i css:
+         <a href="www.wp.pl" class="wp-link"></p>
+         css:
+         footer a{
+         background-repeat: no-repeat;
+         background-size:contain;
+         height:30px;
+         width:30px;
+         /* do tego jakieś marginy i paddingi */
+         }
+         .wp-link{
+         background-image:url('images/logo-wp-footer.png');
+         }
+         ---->
     <div id="fb">
         <a href="http://www.facebook.com"><i class="icon-facebook"></i></a>
     </div>

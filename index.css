@@ -148,6 +148,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 10px 19px -9px rgba(87,66,87,1);
     }
 #features h2 {
     font-family:'Lora',Baskerville,serif;
@@ -217,7 +218,7 @@ header{
     color:white;
     padding:15px;
     font-family:'Lora',Baskerville,serif;
-    font-size:20px;
+    font-size:18px;
     text-align:center;
     text-decoration:none;
     border-style:solid;
@@ -225,11 +226,69 @@ header{
     border-color:white;
     border-radius:25px;
     }
-/*############### the next section ####################*/
+.cta-button a:hover{
+    opacity:0.5;
+}
+/*############### team ####################*/
+
+#team{
+    background-color:#99CED4;
+    height:700px;
+    width:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 19px -9px rgba(87,66,87,1);
+}
+
+#team h2 {
+    font-family:'Lora',Baskerville,serif;
+    font-weight:400;
+    color:white;
+    font-size: 50px;
+    line-height: 60px;
+    text-align:center;
+    margin-bottom:70px;
+}
+.person{
+    background-image:url('images/photo-team.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    height:180px;
+    width:180px;
+    display:inline-block;
+    border-radius:50%;
+    margin-right:50px;
+    margin-left:50px;
+}
+.person h3{
+    padding-top:230px;
+    text-align:center;
+    font-family:'Lora',Baskerville,serif;
+    font-weight:400;
+    font-size:20px;
+    color:white;
+    letter-spacing:2px;
+}
+.person p{
+    padding-top:10px;
+    text-align:center;
+    color:white;
+    font-family:'Lora',Baskerville,serif;
+    font-weight:400;
+    font-style:italic;
+    font-size:14px;
+    line-height:22px;
+    opacity:0.7;
+    width:auto;
+}
+
+
 #contact{
     height:200px;
     width:auto;
-    background-color:#24305E;
+    background-color:#4B6D9D;
 }
 /*  background-image:url('images/background-image-banner-4.jpg');
     background-repeat:no-repeat;

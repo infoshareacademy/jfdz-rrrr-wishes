@@ -8,6 +8,9 @@
 .right{
     float:right;
 }
+.initial{
+    float:initial;
+}
 /*####*/
 .wrapper{position:relative;}
 #banner {
@@ -107,6 +110,7 @@ header{
     color:#24305E;
     font-family:'Lora',Baskerville, serif;
     box-shadow: 0px 10px 19px -9px rgba(87,66,87,1);
+    box-sizing:border-box;
     }
 #description h2{
     font-size:50px;
@@ -138,16 +142,22 @@ header{
 /*############### features section ####################*/
 #features{
     margin-top:-4px;
-    height:600px;
+    height:800px;
     width:auto;
     background-color:#F76C6C;
     opacity:0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center
     }
-.features-wrapper{
-    width: 100%;
-    margin: 0 auto;
-    padding-left:20%;
-    padding-top:200px;
+#features h2 {
+    font-family:'Lora',Baskerville,serif;
+    font-weight:400;
+    color:white;
+    font-size: 50px;
+    line-height: 60px;
+    text-align:center;
+    margin-bottom:30px;
 }
 .icon{
     display:inline-block;
@@ -156,17 +166,27 @@ header{
     background-repeat:no-repeat;
     background-position:center center;
     background-size:contain;
-    margin-right:100px;
-    }
+    margin:70px;
+}
 .icon-on-time{
     background-image:url('images/icon-heart-calendar-features-white.png');
    }
 .icon-made-with-love{
     background-image:url('images/icon-love-gesture-features-white.png');
     height:40px;
-}
+    }
 .icon-support{
     background-image:url('images/icon-heart-support-features-white.png');
+}
+.icon-unique-gift{
+    background-image:url('images/icon-unique-gift-features-white.png');
+}
+.icon-special-design{
+    background-image:url('images/icon-special-design-features-white.png');
+    height:40px;
+   }
+.icon-calligraphy{
+    background-image:url('images/icon-calligraphy-features-white.png');
 }
 .icon h3{
     padding-top:80px;

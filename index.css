@@ -141,15 +141,60 @@ header{
     height:600px;
     width:auto;
     background-color:#F76C6C;
-    background-image:url('images/background-image-banner-4.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center center;
     opacity:0.8;
+    }
+.features-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding-left:20%;
+    padding-top:200px;
 }
+.icon{
+    display:inline-block;
+    height:50px;
+    width:auto;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:contain;
+    margin-right:100px;
+    }
+.icon-on-time{
+    background-image:url('images/icon-heart-calendar-features-white.png');
+   }
+.icon-made-with-love{
+    background-image:url('images/icon-love-gesture-features-white.png');
+    height:40px;
+}
+.icon-support{
+    background-image:url('images/icon-heart-support-features-white.png');
+}
+.icon h3{
+    padding-top:80px;
+    text-align:center;
+    font-family:'Lora',Baskerville,serif;
+    font-weight:400;
+    font-size:20px;
+    color:white;
+    letter-spacing:2px;
+    }
+.icon p{
+    padding-top:10px;
+    text-align:center;
+    color:white;
+    font-family:'Lora',Baskerville,serif;
+    font-weight:400;
+    font-style:italic;
+    font-size:15px;
+    line-height:22px;
+    opacity:0.7;
+   }
 /*############### the next section ####################*/
 #contact{
     height:200px;
     width:auto;
     background-color:#24305E;
 }
+/*  background-image:url('images/background-image-banner-4.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;*/

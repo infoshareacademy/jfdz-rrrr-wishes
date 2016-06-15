@@ -141,13 +141,13 @@ header{
 /*############### features section ####################*/
 #features{
     margin-top:-4px;
-    height:800px;
+    height:900px;
     width:auto;
     background-color:#F76C6C;
     opacity:0.8;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
     }
 #features h2 {
     font-family:'Lora',Baskerville,serif;
@@ -207,6 +207,24 @@ header{
     line-height:22px;
     opacity:0.7;
    }
+.cta-button{
+    margin-top:70px;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+.cta-button a{
+    color:white;
+    padding:15px;
+    font-family:'Lora',Baskerville,serif;
+    font-size:20px;
+    text-align:center;
+    text-decoration:none;
+    border-style:solid;
+    border-width:1px;
+    border-color:white;
+    border-radius:25px;
+    }
 /*############### the next section ####################*/
 #contact{
     height:200px;

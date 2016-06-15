@@ -242,7 +242,7 @@ p
 
 }
 
-#fb
+.fb
 {
     width: 100px;
     height: 100px;
@@ -256,12 +256,12 @@ p
 
 }
 
-#fb:hover
+.fb:hover
 {
     background-color:#5779c4 ;
 }
 
-#tw
+.tw
 {
     width: 100px;
     height: 100px;
@@ -273,12 +273,12 @@ p
     cursor: pointer;
 }
 
-#tw:hover
+.tw:hover
 {
     background-color: #2084c2;
 }
 
-#ins
+.ins
 {
     width: 100px;
     height: 100px;
@@ -290,7 +290,7 @@ p
 
 }
 
-#ins:hover
+.ins:hover
 {
     background-color: #4740ca;
 }
@@ -303,6 +303,8 @@ p
     font-family: 'Lora', arial, serif;
     color:white;
     font-weight:400;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .person{
@@ -312,6 +314,8 @@ p
          background-size:contain;           że mamy zdjęcie i fragment pola z div w którym będzie h2 i p */
     height:200px;
     width:150px;
+    display: inline-block;
+
     /* do tego jakieś marginy i paddingi */
 }
 .daniel{
@@ -326,7 +330,7 @@ p
 
 footer
 {
-    width: 1349px;
+    width: auto;
     margin-right: auto;
     margin-left: auto;
     background-color: brown;
@@ -347,11 +351,11 @@ footer a{
 }
 .wp-link {
     background-image: url('images/logo-wp-footer.png');
-    background-color: #37b93d;
+
     line-height: 50px;
     font-size: 30px;
     padding: 10px;
-    margin-left: 20px;
+    margin: 20px;
 
 
 }

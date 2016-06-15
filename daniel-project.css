@@ -152,12 +152,12 @@ input[type=submit]:hover
 {
     background-color: #37b93d;
 }
-
+/*
 #square1
 {
     border: 1px solid black;
     border-radius: 10px;
-    box-shadow:0 0 20px black; /*cien wokol okregu*/
+    box-shadow:0 0 20px black;
     width: 416px;
     height: 436px;
     float: left;
@@ -173,7 +173,7 @@ input[type=submit]:hover
 {
     border: 1px solid black;
     border-radius: 10px;
-    box-shadow:0 0 20px black; /*cien wokol okregu*/
+    box-shadow:0 0 20px black;
     width: 416px;
     height: 436px;
     float: right;
@@ -189,7 +189,7 @@ input[type=submit]:hover
 {
     border: 1px solid black;
     border-radius: 10px;
-    box-shadow:0 0 20px black; /*cien wokol okregu*/
+    box-shadow:0 0 20px black;
     width: 416px;
     height: 436px;
     float: left;
@@ -206,7 +206,7 @@ input[type=submit]:hover
 {
     border: 1px solid black;
     border-radius: 10px;
-    box-shadow:0 0 20px black; /*cien wokol okregu*/
+    box-shadow:0 0 20px black;
     width: 416px;
     height: 436px;
     float: right;
@@ -217,7 +217,7 @@ input[type=submit]:hover
 
     background-color: lightgray;
 }
-
+*/
 
 table td
 {
@@ -239,16 +239,6 @@ table
 p
 {
     text-align: justify;
-
-}
-
-footer
-{
-    width: 1349px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: brown;
-    text-align: center;
 
 }
 
@@ -315,3 +305,53 @@ footer
     font-weight:400;
 }
 
+.person{
+    background-color: red;
+    background-repeat: no-repeat;
+    background-position: top center;/* jeżeli zdjęcie będzie mniejsze niż cała sekcja to efekt będzie taki,
+         background-size:contain;           że mamy zdjęcie i fragment pola z div w którym będzie h2 i p */
+    height:200px;
+    width:150px;
+    /* do tego jakieś marginy i paddingi */
+}
+.daniel{
+    background-image:url('images/person-image-team-daniel.png');
+}
+.Marta{
+    background-image:url('images/person-image-team-marta.png');
+}
+.Marcin{
+    background-image:url('images/person-image-team-marcin.png');
+}
+
+footer
+{
+    width: 1349px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: brown;
+    text-align: center;
+
+
+}
+
+footer a{
+    background-repeat: no-repeat;
+    background-size:contain;
+    height:30px;
+    width:30px;
+
+
+
+    /* do tego jakieś marginy i paddingi */
+}
+.wp-link {
+    background-image: url('images/logo-wp-footer.png');
+    background-color: #37b93d;
+    line-height: 50px;
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 20px;
+
+
+}

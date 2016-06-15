@@ -47,16 +47,15 @@ header{
 .menu a{
     margin-top:30px;
     text-decoration:none;
-    float:right;
     text-transform: uppercase;
-    color: #404040;
+    color: white;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 1px;
     font-family: 'Raleway',sans-serif,arial;
     margin-right: 50px;
-    overflow: hidden;
     opacity:0.8;
+    display:inline-block;
 }
 .menu a:hover{
     color:#FC7753;

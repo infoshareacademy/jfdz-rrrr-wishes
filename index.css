@@ -239,6 +239,7 @@ header{
     align-items: center;
     justify-content: center;
     box-shadow: 0px 10px 19px -9px rgba(87,66,87,1);
+    opacity:0.9;
 }
 
 #team h2 {
@@ -283,12 +284,13 @@ header{
     opacity:0.7;
     width:auto;
 }
+/*############### contact ####################*/
 #contact{
     height:110px;
     width:auto;
-    background-color:#4B6D9D;
+    background-color: #374e87;
     padding:30px 0px;
-    }
+}
 .contact-nav{
     height:100px;
     width:80px;
@@ -304,8 +306,11 @@ header{
     font-weight:400;
     display:inline-block;
     line-height:24px;
+    opacity:0.8;
 }
-
+#contact .contact-nav a:hover{
+    opacity:0.5;
+}
 .contact-offer{
     margin-left:50px;
     display:inline-block;
@@ -315,6 +320,7 @@ header{
     font-weight: 400;
     font-size: 20px;
     color: white;
+    opacity:0.8;
     letter-spacing: 2px;
 }
 .contact-offer .cta-button{
@@ -339,7 +345,36 @@ header{
 .contact-offer .cta-button a:hover{
     opacity:0.5;
 }
-/*  background-image:url('images/background-image-banner-4.jpg');
+.copyright{
+    font-family: 'Lora',Baskerville,serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    opacity:0.3;
+    letter-spacing:1px;
+    margin-left:50px;
+    margin-top:75px;
+}
+.social-contact{
+}
+ .social-icon{
+    height:50px;
+    width:50px;
     background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center center;*/
+    background-position:center center;
+    background-size:contain;
+    margin-right:50px;
+     margin-top:25px;
+    }
+.icon-twitter{
+    display:inline-block;
+    background-image:url('images/icon-twitter-contact.png');
+}
+.icon-facebook{
+    display:inline-block;
+    background-image:url('images/icon-facebook-contact.png');
+}
+.icon-instagram{
+    display:inline-block;
+    background-image:url('images/icon-instagram-contact.png');
+}

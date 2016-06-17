@@ -230,6 +230,21 @@ header{
     opacity:0.5;
 }
 /*############### team ####################*/
+.team-wrapper{
+    /* We first create a flex layout context */
+    display: flex;
+
+    /* Then we define the flow direction and if we allow the items to wrap
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+}
+
 
 #team{
     background-color:#99CED4;

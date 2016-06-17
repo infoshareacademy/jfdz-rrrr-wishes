@@ -93,7 +93,7 @@
         </div>
         <div class="clear"></div>
         <div class="cta-button">
-            <a href="#">Click for discount</a>
+            <a href="#openModal">Click for discount</a>
         </div>
         </div>
     </section>
@@ -140,7 +140,7 @@
     <div class="contact-offer left">
         <h3>Sign up for more awesomeness</h3>
         <div class="cta-button">
-            <a href="#">Click for discount</a>
+            <a href="#openModal">Click for discount</a>
         </div>
         <p class="copyright">&copy; copyright by RRRR</p>
     </div>
@@ -152,5 +152,36 @@
         </div>
     <div class="clear"></div>
 </footer>
+
+<!--#####################EFEKT WINDOW#############################-->
+
+
+
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close"></a>
+        <h3>Modal Box</h3>
+
+        <p>jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wie</p>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script>
+            $(function() {
+                $('a[href*=#]:not([href=#]):not([href=#openModal])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+</script>
+
 </body>
 </html>

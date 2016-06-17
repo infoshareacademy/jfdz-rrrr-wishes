@@ -299,7 +299,7 @@ header{
     }
 /*############### contact ####################*/
 #contact{
-    background-color: #374e87;
+    background-color: #494e6b;
     padding:30px 0px;
     display: flex;
     align-items: center;
@@ -417,10 +417,14 @@ header{
 }
 
 .modalDialog > div {
-    width: 400px;
+    height:350px;
+    max-width:400px;
     position: relative;
     margin: 10% auto;
-    padding:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
     background: #F88989;
     box-shadow: 0px 7px 56px 1px rgba(248,137,137,0.77);
     border-radius:10px;
@@ -431,6 +435,7 @@ header{
     font-family:'Lora',Baskerville,serif;
     font-weight:400;
     font-size:20px;
+    padding-bottom:8px;
     color:white;
     letter-spacing:2px;
 }
@@ -442,7 +447,60 @@ header{
     font-style:italic;
     font-size:14px;
     line-height:22px;
+    padding-bottom:22px;
     opacity:0.7;
+}
+
+label{
+    color:white;
+    font-family:'Lora',Baskerville,serif;
+    font-size:15px;
+    margin-right:10px;
+    opacity:0.8;
+}
+input[type=submit]{
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 25px;
+    background-color:#F88989;
+    color: white;
+    font-family:'Raleway',arial,sans-serif;
+    font-weight:400;
+    font-size:12px;
+    letter-spacing:1px;
+    padding: 10px 32px;
+    text-decoration: none;
+    margin-top:20px;
+    margin-bottom:20px;
+    cursor: pointer;
+    position:absolute;
+    left:140px;
+    }
+#name-field {
+    border-style:solid;
+    border-bottom-width:1px;
+    border-top:0;
+    width:250px;
+    color:white;
+    border-left:0;
+    border-right:0;
+    border-color:white;
+    background-color:#F88989;
+    margin-right:50px;
+    margin-bottom:20px;
+   }
+#email-field {
+    border-style:solid;
+    border-bottom-width:1px;
+    border-top:0;
+    width:250px;
+    color:white;
+    border-left:0;
+    border-right:0;
+    border-color:white;
+    background-color:#F88989;
+    margin-bottom:20px;
 }
 .close {
     background-image:url('images/icon-close-modal-window-white.png');

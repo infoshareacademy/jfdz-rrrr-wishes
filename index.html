@@ -136,6 +136,7 @@
         <a href="#description">About Lora</a>
         <a href="#features">Features</a>
         <a href="#team">Team</a>
+        <a href="#openModal">Sign up</a>
     </div>
     <div class="contact-offer left">
         <h3>Sign up for more awesomeness</h3>
@@ -153,16 +154,29 @@
     <div class="clear"></div>
 </footer>
 
-<!--#####################EFEKT WINDOW#############################-->
-
-
-
+<!--#####################Modal Window#############################-->
 <div id="openModal" class="modalDialog">
     <div>
         <a href="#close" title="Close" class="close"></a>
-        <h3>Modal Box</h3>
-
-        <p>jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wie</p>
+        <h3>Make it happen</h3>
+        <p>Don't live us without becoming an Lora insider</p>
+        <form action="">
+            <label for="name-field">Name</label>
+            <input id="name-field"
+                   name="user-name"
+                   required
+                   pattern="[A-Z]{5[0-9{5}"
+                   type="text"/>
+            <div class="clear"></div>
+            <label for="email-field">E-mail</label>
+            <input type="email" id="email-field"
+                   name="email-adress"
+                   required
+                   pattern="[A-Z]{5[0-9{5}"
+                  />
+            <div class="clear"></div>
+            <input type="submit" value="send">
+    </form>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -182,6 +196,7 @@
                 });
             });
 </script>
+
 
 </body>
 </html>

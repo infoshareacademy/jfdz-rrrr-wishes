@@ -20,7 +20,7 @@
                 <a href="#features">Features</a>
                 <a href="#team">Team</a>
                 <a href="#contact">Contact</a>
-                <a href="#openModal">Sign up</a>
+                <a href="#openModal" onclick="getElementById('openModal').style.display='block'">Sign up</a>
             </nav>
             <div class="clear"></div>
         </header>
@@ -93,7 +93,7 @@
                 </br> et dolore magna aliqua. </p>
         </div>
         <div class="clear"></div>
-        <div class="cta-button">
+        <div class="cta-button" onclick="getElementById('openModal').style.display='block'">
             <a href="#openModal">Click for discount</a>
         </div>
         </div>
@@ -137,11 +137,11 @@
         <a href="#description">About Lora</a>
         <a href="#features">Features</a>
         <a href="#team">Team</a>
-        <a href="#openModal">Sign up</a>
+        <a href="#openModal" onclick="getElementById('openModal').style.display='block'">Sign up</a>
     </div>
     <div class="contact-offer left">
         <h3>Sign up for more awesomeness</h3>
-        <div class="cta-button">
+        <div class="cta-button"onclick="getElementById('openModal').style.display='block'">
             <a href="#openModal">Click for discount</a>
         </div>
         <p class="copyright">&copy; copyright by RRRR</p>
@@ -170,12 +170,12 @@
             <div class="clear"></div>
             <label for="email-field">E-mail</label>
             <input type="email" id="email-field"
-                   name="email-adress"
+                   name="email-adress"onclick="getElementById('openModal').style.display='block'"
                    required
                    pattern="[A-Z]{5[0-9{5}"
                   />
             <div class="clear"></div>
-            <input type="submit" value="send">
+            <input type="submit" value="send" onclick="getElementById('openModal').style.display='none'">
     </form>
     </div>
 </div>

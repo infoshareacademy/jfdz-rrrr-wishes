@@ -44,20 +44,20 @@ header{
     letter-spacing:2px;
 }
 /*########## navigation ###############*/
-.menu a{
+.menu li{
     margin-top:30px;
+
+    margin-right: 50px;
+    display: inline-block;
+    }
+.menu a{
     text-decoration:none;
     text-transform: uppercase;
     color: white;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 12px;
     letter-spacing: 1px;
     font-family: 'Raleway',sans-serif,arial;
-    margin-right: 50px;
-    opacity:0.8;
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
 }
 .menu a:hover{
     color:#FC7753;
@@ -393,23 +393,24 @@ margin-left:400px;
 
 .modalDialog {
     position: fixed;
+    display: none;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background: rgba(0,0,0,0.6);
     z-index: 99999;
-    opacity:0;
+    opacity:1;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
-    pointer-events: none;
+    /*pointer-events: none;*/
 }
 
-.modalDialog:target {
-    opacity:1;
-    pointer-events: auto;
-}
+/*.modalDialog:target {*/
+    /*opacity:1;*/
+    /*pointer-events: auto;*/
+/*}*/
 
 .modalDialog > div {
     height:350px;

@@ -14,10 +14,6 @@
 /*####*/
 .wrapper{position:relative;}
 #banner {
-   /*background-image:url('images/background-image-banner.jpg');*/
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:top center;
     height:700px;
     width:100%;
 }
@@ -30,7 +26,7 @@ video{
     background-color: rgba(30, 30, 30, 0.0);
  }
 header{
-    background-color: rgba(77, 52, 104, 0.8);
+    background-color: rgba(38, 50, 56, 0.8);
     transition: background-color 0.25s;
     position: fixed;
     top: 0;
@@ -79,17 +75,17 @@ header{
     font-family: 'Lora', arial, serif;
     color:white;
     font-weight:400;
-    padding-top:200px;
+    padding-top:230px;
     padding-left:100px;
     }
 .banner-title h1{
-    font-size:70px;
-    line-height:70px;
+    font-size:60px;
+    line-height:60px;
     padding-bottom:20px;
 }
 .banner-title h4 {
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 23px;
     margin-bottom: 35px;
     font-weight: 400;
     font-style: italic;

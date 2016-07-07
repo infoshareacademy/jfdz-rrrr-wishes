@@ -14,22 +14,24 @@
 /*####*/
 .wrapper{position:relative;}
 #banner {
-   background-image:url('images/background-image-banner.jpg');
+   /*background-image:url('images/background-image-banner.jpg');*/
     background-repeat:no-repeat;
     background-size:cover;
-    background-position:center center;
-    height:800px;
+    background-position:top center;
+    height:700px;
     width:100%;
 }
-.page-section-header .sticked{
-    background-color: #fff;
-    box-shadow: 0 -1px 16px 0 #666;
+video{
+    width: 100%;
+    position:absolute;
+    z-index:-1;
 }
-.page-section-header{
-    background-color: #1e1e1e;
-    background-color: rgba(30, 30, 30, 0.8);
+.transparent-menu{
+    background-color: rgba(30, 30, 30, 0.0);
+ }
+header{
+    background-color: rgba(77, 52, 104, 0.8);
     transition: background-color 0.25s;
-    padding: 26px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -73,11 +75,11 @@
 /*########### banner ###############*/
 .banner-title{
     margin:0 auto;
-    padding-top:310px;
     text-align:left;
     font-family: 'Lora', arial, serif;
     color:white;
     font-weight:400;
+    padding-top:200px;
     padding-left:100px;
     }
 .banner-title h1{

@@ -21,11 +21,20 @@
     height:800px;
     width:100%;
 }
-header{
-    position:fixed;
-    z-index:1;
-    height:75px;
-    width:100%;
+.page-section-header .sticked{
+    background-color: #fff;
+    box-shadow: 0 -1px 16px 0 #666;
+}
+.page-section-header{
+    background-color: #1e1e1e;
+    background-color: rgba(30, 30, 30, 0.8);
+    transition: background-color 0.25s;
+    padding: 26px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 /*######## logo###########*/
 .logo{
@@ -46,7 +55,6 @@ header{
 /*########## navigation ###############*/
 .menu li{
     margin-top:30px;
-
     margin-right: 50px;
     display: inline-block;
     }

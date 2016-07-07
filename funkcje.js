@@ -24,3 +24,11 @@ $(function() {
         }
     });
 });
+window.addEventListener('scroll', function() {
+    var header = document.getElementById('page-section-header');
+    if (window.pageYOffset == 0) {
+        header.classList.remove('sticked');
+    } else {
+        header.classList.add('sticked');
+    }
+});

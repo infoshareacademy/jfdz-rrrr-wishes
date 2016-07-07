@@ -24,19 +24,3 @@ $(function() {
         }
     });
 });
-
-document.addEventListener('scroll', function() {
-
-    console.log(window.pageYOffset);
-
-    var header = document.getElementsByTagName('header')[0];
-    if (window.pageYOffset == 0) {
-        header.classList.add('nowaKlasa');
-    } else {
-        header.classList.remove('nowaKlasa');
-
-    }
-
-
-
-});

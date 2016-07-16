@@ -25,7 +25,7 @@ video{
 .transparent-menu{
     background-color: rgba(30, 30, 30, 0.0);
  }
-header{
+#page-section-header{
     background-color: rgba(38, 50, 56, 0.8);
     transition: background-color 0.25s;
     position: fixed;
@@ -561,5 +561,6 @@ input[type=submit]{
 
 #cookie-warn p{
     font-size: 12px;
+    line-height:20px;
     color: #333;
 }

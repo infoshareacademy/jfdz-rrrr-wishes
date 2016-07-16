@@ -29,7 +29,7 @@ document.addEventListener('scroll', function() {
 
     console.log(window.pageYOffset);
 
-    var header = document.getElementById('page-section-header')[0];
+    var header = document.getElementsByClassName('page-section-header')[0];
     if (window.pageYOffset == 0) {
         header.classList.add('nowaKlasa');
     } else {

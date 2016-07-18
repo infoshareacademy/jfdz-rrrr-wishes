@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>przewijanie</title>
+
+<!-- NIE WIEM JAK INACZEJ TO ZROBIC, NIE MOGE NIC ZNALESC ZEBY ZROBIC TO TYLKO W HTML I CSS.
+     GDZIE NIE WEJDE NA STRONE TO PISZA ZE MUSI BYC BIBIOTEKA "QJARY" I "JS" TAK WIEC: KOD JS JEST SCIAGNIETY Z INTERNETU
+      I PODLINKOWANA JEST BIBLIOTEK. ZOSTAJE TYLKO GRAFICZNA STRZALKA ALE TAKIEJ NIE MAM
+
+      -->
+
+    <link rel="stylesheet" href="ikona-powrotu.css" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('a[href^="#"]').on('click', function(event) {
+
+                var target = $( $(this).attr('href') );
+
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+
+        });
+    </script>
+
+    <!--
+
+    W trzeciej linijce odwołujemy się do wszystkich linków które w atrybucie href posiadają znak # i ustawiamy metodą .on kod, który wykona się po kliknięciu na taki element.
+
+Na samym początku do zmiennej target zostanie przypisany element od id równym atrybutowi href klikniętego odnośnika, czyli jeśli klikniemy na link o href  równym top to odwołamy się do elementu o id top.
+
+Poniżej w instrukcji if sprawdzamy czy długość zmienna target przechowuje jakąś wartość. Jeśli tak to przy pomocy event.preventDefault() wyłączamy domyślne działanie odnośnika. Jeśli tego nie zrobimy to przewijanie nie będzie tak płynne ponieważ wykonane zostanie również domyślne działanie – natychmiastowy przeskok do elementu.
+
+Poniżej metodą .animate wywołaną na elementach html oraz body przewijamy stronę przy pomocy scrollTop do elementu o danym id. Ustawiamy długość animacji na 1000 milisekund – 1 sekundę.
+
+Teraz wystarczy w atrybucie dowolnego odnośnika na stronie wpisać znak # oraz id dowolnego elementu, do którego chcemy się odnieść.
+
+    -->
+
+</head>
+
+<body>
+
+<div id="container">
+
+    <div class="title1"></div>
+    <div class="title2"><h1 id="pozycja">Jakis tam teks</h1></div>
+    <div class="title3"></div>
+    <div class="title4"></div>
+    <div class="title5"></div>
+
+    <a href="#pozycja"><div class="scroll"></div></a>
+
+</div>
+
+</body>
+</html>

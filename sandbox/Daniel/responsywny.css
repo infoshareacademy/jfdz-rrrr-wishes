@@ -1,0 +1,143 @@
+#wrapper
+{
+    width: 1000px;
+    height: 500px;
+    background-color: lightgray;
+    position: relative;
+}
+
+#jeden
+{
+   width: 300px;
+    height: 150px;
+    background-color: red;
+    text-align: center;
+}
+
+#dwa
+{
+    width: 300px;
+    height: 150px;
+    background-color: yellow;
+    text-align: center;
+
+    /*
+    position: relative; przesuwa dany elment z pozycji w ktorej aktualnie sie znajduje, i nie wplywa na inne
+    left: 200px;
+    top: 100px;
+    */
+
+    position: absolute; /*przesuwa dany element wzgedem okna przegladarki
+                          gdy ustawimy position:relative np. w wrapper to element bedzie sie
+                          ustwaial do wrappera*/
+    left: 10px;
+    top: 10px;
+    bottom: 0;
+    right: 0;
+}
+
+#trzy
+{
+    width: 300px;
+    height: 150px;
+    background-color: deepskyblue;
+    text-align: center;
+}
+
+
+
+
+
+/* ##############################ogólne #######(RESPONSYWNY HTML i CSS)####################### */
+
+* {margin:0px; padding: 0px;}
+
+body
+{   font: 16px Verdana;
+    line-height:1.6;
+    background: #EDE6DE;
+}
+#wrapper
+{   width:90%;
+    overflow:hidden;
+    margin: 0 auto;
+}
+a
+{
+    color: #354458;
+}
+
+/*############logo##############
+#header
+{
+    height:100px;
+    background: #354458;
+    margin: 0 0 10px 0;
+}
+#header h1
+{
+    padding: 20px;
+    color: #E9E0D6;
+}
+
+/*###########################tresc##################
+#content
+{
+    width:75%;
+    background: #EB7260;
+    float:left;
+    padding:1%;
+    overflow:hidden;
+}
+
+/* ##############################menu ##############################
+#menu
+{
+    background: #548BC2;
+    width:20%;
+    float:right;
+    padding:1%;
+    overflow:hidden;
+}
+#menu h5
+{
+    padding:3px 3px 15px 3px;
+    font-size:14px;
+}
+#menu ul li
+{
+    list-style-type:none;
+    padding:0 0 0 10px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    #menu
+        {
+            width:88%;
+            position:absolute;
+            height:30px;
+        }
+    #menu h5
+        {
+            display: none;
+        }
+    #menu ul li
+        {
+            display: inline;
+        }
+    #menu ul li:after
+        {
+            content: " |";
+        }
+    #content
+        {
+            width: 98%;
+            position:relative;
+            top: 30px;
+            margin-top:5%;
+        }
+}
+
+*/

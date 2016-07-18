@@ -1,0 +1,100 @@
+/* ------------------------MENU------------------------ */
+
+/* usunięcie domyślnych właściwości CSS z elementów - ol - oraz - ul */
+#menu, #menu ul, #menu ol {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+/* wygląd głównego elementu - ol */
+#menu {
+    background-color:gray;
+    font-size:18px;
+    height:400px;
+    line-height: 40px;
+    text-align:center;
+    border: 1px solid black;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#menu > li:first-child{
+    margin-left: 10px;
+}
+
+/* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+#menu a {
+    display:block;
+    text-decoration:none;
+    color:red;
+    font-weight: 700;
+}
+
+#menu > li {
+    float:left;
+    width:150px;
+    background-color:#DDD;
+    height:40px;
+    border:1px solid #000;
+    margin-top: 10px;
+}
+
+
+#menu > li:hover > ul {
+    display:block;
+
+}
+
+/* ------------------------MENU ROZWIJANE LEVEL 2----------------------- */
+
+/* wygląd rozwijanych elementów - ul */
+#menu > li > ul {
+    display:none;
+
+}
+
+/* wygląd - li - w części rozwijanej */
+#menu > li > ul > li {
+    position:relative;
+    background-color:#EEE;
+}
+
+/* wygląd- a - w części rozwijanej */
+#menu > li > ul > li > a {
+    border:1px solid #000;
+}
+
+
+/* ------------------------MENU ROZWIJANE LEVEL 3----------------------- */
+
+/* wygląd głównego elementu - ol - w drugiej części rozwijanej */
+#menu > li > ul > li > ol {
+    display:none;
+    width:150px;
+    position:absolute;
+    left:100%;
+    margin-top:-42px;
+}
+
+/* wygląd głównego elementu - ol - w drugiej części rozwijanej, po najechaniu kursorem myszki na jego rodzica - li */
+#menu > li > ul > li:hover > ol {
+    display:block;
+}
+
+/* wygląd elementów - li - w drugiej części rozwijanej */
+#menu > li > ul > li > ol > li {
+    background-color:#CCC;
+}
+
+/* wygląd elementów - a - w drugiej części rozwijanej */
+#menu > li > ul > li > ol > li > a {
+
+    border:1px solid #000;
+}
+
+
+
+
+

@@ -1,0 +1,98 @@
+
+/*########################Model „flexbox”############################*/
+
+/*
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+*/
+
+
+div#container {
+    height: 500px;
+    width: 250px;
+    padding: 1em;
+    background-color: gray;
+    display: flex;
+
+    /*display: inline-flex;   /*wyswietli w lini*/
+    /*flex-flow: row-reverse; /*przeniesie divy do prawej i odwroci ich kolejnosc (z 1,2,3 do 3,2,1)*/
+    /*flex-flow: column;      /*elementy wyświetlane od góry do doły, w podanej w HTML kolejności*/
+    /*flex-flow: wrap;        /*jeśli brak miejsca, nie mieszczące się w linii elementy przenoszone są kolejnej linii*/
+    /*flex-flow: nowrap;      /*w tym przypadku nie ma przenoszenia do nowej linii*/
+    /*flex-flow: row;         /*wartość domyślna; elementy wyświetlane od lewej w kolejności takiej jak podana w pliku HTML*/
+
+    /*Do tego mała uwaga: pierwsze cztery wartości można stosować łącznie z trzema ostatnimi –
+    to dlatego, że właściwość „flex-flow” jest skrótem właściwości „flex-direction” oraz „flex-wrap”. Na przykład tak:*/
+
+
+}
+
+div.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+    text-align: center;
+    flex: 1 0 100px; /*wpływa na rozciąganie elementów w poziomie lub w pionie*/
+                    /*piewsza pozycja: Pierwsza wartość określa proporcje rozciągania względem innych rozciąganych elementów –
+                        jeśli w kontenerze istnieje jakaś wolna przestrzeń, element z ustawioną wartością 2 zabierze
+                        na swoje rozciągnięcie dwa razy więcej miejsca niż element z ustawioną wartością
+                      druga pozycja:  Druga wartość to „elastyczność negatywna” oznacza to samo co pierwsza z tym,
+                                      że dotyczy przypadku gdy elementy muszą zostać zwężone a nie rozszerzone
+                      trzecia pozycja: to preferowana szerokość/wysokość*/
+}
+
+/*################Interfejs wielokolumnowy##################*/
+#container1 {
+    width: 350px;
+
+    background: lightgray;
+
+    column-width: 150px;
+    column-count: 2;
+}
+/*najpierw określamy preferowaną szerokość kolumny (powinna być o ponad połowę mniejsza od szerokości całego kontenera).
+    Wartość właściwości ‚column-width’ może być ustawiona na konkretną wartość, lub na wartość ‚auto’ –
+    wówczas szerokość dostosowywana jest w zależności od ustawienia ilości kolumn i szerokości kontenera. Następnie określamy ilość kolumn –
+    w tym przypadku dwie (właściwość ‚column-count’).*/
+
+/*dostępny jest także szereg właściwości pomocniczych. Na początek weźmy możliwość ustawiania odstępów między kolumnami oraz definiowania wyglądu linii rozdzielającej kolumny.
+
+1)  column-gap – definiuje odstęp pomiędzy kolumnami tekstu; możliwe wartości to „normal” będąca wartością domyślną i równą „1em” lub konkretna wartość zdefiniowana za pomocą standardowych jednostek CSS
+2)  column-rule-color – pozwala ustalić kolor linii rozdzielającej kolumny tekstu; możliwe jest przypisanie tej właściwości koloru za pomocą wszystkich dostępnych w CSS3 sposobów ustawiania koloru
+3)  column-rule-width – szerokość linii rozdzielającej  kolumny; akceptowane są wszystkie wartości jakie można przypisać do właściwości ‚border-width’
+4)  column-rule-style – styl linii rozdzielającej kolumny; można przypisać każda wartość jaka akceptowana jest przez właściwość ‚border-style’ („solid”, „dotted” itp.)
+5)  column-rule – skrót dla trzech powyższych wartości; wartości podaje się w następującej kolejności: <column-rule-width> <column-rule-style> <column-rule-color>
+
+
+
+*/
+
+
+

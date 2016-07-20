@@ -47,24 +47,38 @@
     color:#FC7753;
 }
 
+/*@media only screen and (max-width: 800px) {*/
+
+    /*.menu{*/
+
+
+    /*}*/
+
+    /*.menu ul li {*/
+
+        /*visibility: hidden;*/
+    /*}*/
+    /*.menu ul li i{*/
+        /*visibility: visible;*/
+        /*font-size: 40px;*/
+    /*}*/
+/*}*/
+
 @media only screen and (max-width: 800px) {
 
     .menu{
-        width: 50%;
+        width: 200px;
+
+    }
+    .menu li{
+        margin: 10px;
 
     }
 
-    .menu ul li {
-
-        visibility: hidden;
-    }
     .menu ul li i{
         visibility: visible;
-        font-size: 40px;
     }
 }
-
-
 
 
 .ion-ios-home-outline{

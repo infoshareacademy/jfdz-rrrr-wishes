@@ -47,3 +47,46 @@
     color:#FC7753;
 }
 
+@media only screen and (max-width: 800px) {
+
+    .menu{
+        width: 50%;
+
+    }
+
+    .menu ul li {
+
+        visibility: hidden;
+    }
+    .menu ul li i{
+        visibility: visible;
+        font-size: 40px;
+    }
+}
+
+
+
+
+.ion-ios-home-outline{
+    font-size: 20px;
+    visibility: hidden;
+
+}
+
+.ion-ios-at-outline{
+    font-size: 20px;
+    visibility: hidden;
+
+}
+.ion-ios-people-outline{
+    font-size: 20px;
+    visibility: hidden;
+}
+.ion-ios-more-outline{
+    font-size: 20px;
+    visibility: hidden;
+}
+.ion-ios-star-outline{
+    font-size: 20px;
+    visibility: hidden;
+}

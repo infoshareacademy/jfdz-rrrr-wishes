@@ -68,12 +68,9 @@
 
     .menu{
         width: auto;
-
     }
     .menu li{
         margin: 10px;
-
-
     }
 
     .menu ul li i{
@@ -93,13 +90,11 @@
 .ion-ios-home-outline{
     font-size: 20px;
     visibility: hidden;
-
 }
 
 .ion-ios-at-outline{
     font-size: 20px;
     visibility: hidden;
-
 }
 .ion-ios-people-outline{
     font-size: 20px;

@@ -67,16 +67,25 @@
 @media only screen and (max-width: 800px) {
 
     .menu{
-        width: 200px;
+        width: auto;
 
     }
     .menu li{
         margin: 10px;
 
+
     }
 
     .menu ul li i{
         visibility: visible;
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    .hiding{
+        display: none;
+    }
+    .menu ul li:last-child{
+        display: none;
     }
 }
 

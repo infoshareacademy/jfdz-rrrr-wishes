@@ -24,7 +24,7 @@ video {
 }
 .page-section-header{
     background-color: rgba(38, 50, 56, 0.8);
-    transition: background-color 0.25s;
+    transition:background-color 0.25s;
     position: fixed;
     top: 0;
     left: 0;
@@ -34,12 +34,10 @@ video {
 .nowaKlasa{
     background-color: rgba(38, 50, 56, 0.0);
 }
-/*probka ze slideshow*/
+/*#########probka ze slideshow###########*/
 #slideshow {
    position: relative;
-
 }
-
 #slideshow > div {
     height:700px;
     width: 100%;
@@ -577,4 +575,28 @@ input[type=submit]{
     font-size: 12px;
     line-height:20px;
     color: #333;
+}
+
+/*przycisk powrotu na górê*/
+
+.button-back-to-top{
+    height:45px;
+    width:45px;
+    border-radius:50%;
+    background-size:30%;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-image: url('images/icon-back-to-top.png');
+    position:fixed;
+    right:50px;
+    bottom:20px;
+    z-index:100;
+    display:block;
+    background-color: rgba(98, 79, 212,0.9);
+    transition:background-color 0.75s;
+
+}
+.hide-button{
+    display:none;
+    background-color: rgba(98, 79, 212,0.0);
 }

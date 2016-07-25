@@ -37,7 +37,7 @@ document.addEventListener('scroll', function() {
 
     }
 });
-/*
+
 
 //pr√≥bna funkcja
 
@@ -56,25 +56,7 @@ $().ready(function() {
         $("#cookie-warn").show();
     }
 });
-*/
-/* ≥adowanie contentu z pomocπ fade*///TO DO
-$(window).on("load",function() {
-    $(window).scroll(function() {
-        $(".fade").each(function() {
-            /* Check the location of each desired element */
-var objectBottom = $(this).offset().top + $(this).outerHeight();
-var windowBottom = $(window).scrollTop() + $(window).innerHeight();
 
-/* If the element is completely within bounds of the window, fade it in */
-if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-    if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-} else { //object goes out of view (scrolling up)
-    if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-}
-});
-}); $(window).scroll(); //invoke scroll-handler on page-load
-});
-//remove fade class from sections if I don't want to use it.
 $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() {
@@ -85,3 +67,16 @@ setInterval(function() {
         .end()
         .appendTo('#slideshow');
 },  20000);
+
+document.addEventListener('scroll', function() {
+
+    console.log(window.pageYOffset);
+
+    var header = document.getElementsByClassName('button-back-to-top')[0];
+    if (window.pageYOffset == 0) {
+        header.classList.add('hide-button');
+    } else {
+        header.classList.remove('hide-button');
+
+    }
+});

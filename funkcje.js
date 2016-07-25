@@ -31,9 +31,9 @@ document.addEventListener('scroll', function() {
 
     var header = document.getElementsByClassName('page-section-header')[0];
     if (window.pageYOffset == 0) {
-        header.classList.add('nowaKlasa');
+        header.classList.add('transparent-menu');
     } else {
-        header.classList.remove('nowaKlasa');
+        header.classList.remove('transparent-menu');
 
     }
 

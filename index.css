@@ -17,14 +17,11 @@
     height:700px;
     width:100%;
 }
-video{
+video {
     width: 100%;
-    position:absolute;
-    z-index:-1;
-}/*
-.transparent-menu{
-    background-color: rgba(30, 30, 30, 0.0);
- }*/
+    position: absolute;
+    z-index: -1;
+}
 .page-section-header{
     background-color: rgba(38, 50, 56, 0.8);
     transition: background-color 0.25s;
@@ -36,6 +33,23 @@ video{
 }
 .nowaKlasa{
     background-color: rgba(38, 50, 56, 0.0);
+}
+/*probka ze slideshow*/
+#slideshow {
+   position: relative;
+
+}
+
+#slideshow > div {
+    height:700px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+ }
+.item{
+    background-image: url('images/background-image-banner.jpg');
+    background-size:cover;
+    background-position: center center;
 }
 /*######## logo###########*/
 .logo{
@@ -121,7 +135,7 @@ video{
     color:#24305E;
     font-family:'Lora',Baskerville, serif;
     box-shadow: 0px 10px 19px -9px rgba(87,66,87,1);
-
+    opacity:1;
     }
 #description h2{
     font-size:50px;
@@ -160,7 +174,7 @@ video{
     background-image: url('images/features-bg.jpg');
     padding-top:70px;
     padding-bottom:140px;
-   /* opacity:0.8;*/
+    opacity:1;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -256,7 +270,7 @@ video{
     align-items: center;
     flex-flow: row wrap;
     box-shadow: 0px 10px 19px -9px rgba(87,66,87,1);
-    opacity:0.9;
+    opacity:1;
 }
 .team-wrapper{
     margin:0 auto!important;

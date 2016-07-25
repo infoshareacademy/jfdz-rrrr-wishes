@@ -9,7 +9,7 @@ closeModal = function() {
 openModal = function() {
     $('#openModal').show();
 };
-
+/* smooth przewijanie pomiêdzy sekcjami pomija link do otworzenia okienka modal*/
 $(function() {
     $('a[href*=#]:not([href=#]):not([href=#openModal])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -24,7 +24,7 @@ $(function() {
         }
     });
 });
-
+/* zrób transprentne menu podczas przewijania*/
 document.addEventListener('scroll', function() {
 
     console.log(window.pageYOffset);

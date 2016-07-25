@@ -21,10 +21,10 @@ video{
     width: 100%;
     position:absolute;
     z-index:-1;
-}
+}/*
 .transparent-menu{
     background-color: rgba(30, 30, 30, 0.0);
- }
+ }*/
 .page-section-header{
     background-color: rgba(38, 50, 56, 0.8);
     transition: background-color 0.25s;

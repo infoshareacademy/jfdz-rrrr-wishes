@@ -29,7 +29,6 @@
     margin-top:30px;
     margin-right: 50px;
     display: inline-block;
-
 }
 .menu a{
     text-decoration:none;
@@ -51,7 +50,8 @@
         width: auto;
     }
     .menu li{
-        margin: 10px;
+        margin-right: 10px;
+        margin-top: 0;
     }
 
     .menu ul li i{
@@ -59,6 +59,10 @@
         font-size: 50px;
         margin-left: 10px;
     }
+    .menu ul li i:hover{
+        text-shadow:2px 2px 0 gray;
+    }
+    /*po najechaniu kursorem dodaje efekt rozmycia */
     .hiding{
         display: none;
     }
@@ -70,7 +74,7 @@
     }
 }
 
-
+/*########  IKONKI    #######3*/
 .ion-ios-home-outline{
     font-size: 20px;
     visibility: hidden;

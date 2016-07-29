@@ -29,7 +29,6 @@
     margin-top:30px;
     margin-right: 50px;
     display: inline-block;
-
 }
 .menu a{
     text-decoration:none;
@@ -43,6 +42,7 @@
 
 .menu a:hover{
     color:#FC7753;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -51,14 +51,19 @@
         width: auto;
     }
     .menu li{
-        margin: 10px;
+        margin-right: 10px;
+        margin-top: 0;
     }
 
     .menu ul li i{
         visibility: visible;
-        font-size: 50px;
+        font-size: 35px;
         margin-left: 10px;
     }
+    .menu ul li i:hover{
+        text-shadow:2px 2px 0 gray;
+    }
+    /*po najechaniu kursorem dodaje efekt rozmycia */
     .hiding{
         display: none;
     }
@@ -70,7 +75,7 @@
     }
 }
 
-
+/*########  IKONKI    #######3*/
 .ion-ios-home-outline{
     font-size: 20px;
     visibility: hidden;

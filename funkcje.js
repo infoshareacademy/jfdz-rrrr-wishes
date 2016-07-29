@@ -56,8 +56,7 @@ $().ready(function() {
         $("#cookie-warn").show();
     }
 });
-
-
+$("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { // to do choose devtips solutions devtips
     $('#slideshow > div:first')

@@ -57,9 +57,9 @@ $().ready(function() {
     }
 });
 
-$("#slideshow > div:gt(0)").hide();
 
-setInterval(function() {
+
+setInterval(function() { // to do choose devtips solutions devtips
     $('#slideshow > div:first')
         .fadeOut(1000)
         .next()

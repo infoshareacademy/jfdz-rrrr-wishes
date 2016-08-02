@@ -444,10 +444,7 @@ margin-left:400px;
     /*pointer-events: none;*/
 }
 
-/*.modalDialog:target {*/
-    /*opacity:1;*/
-    /*pointer-events: auto;*/
-/*}*/
+
 
 .modalDialog > div {
     height:350px;
@@ -577,7 +574,7 @@ input[type=submit]{
     color: #333;
 }
 
-/*przycisk powrotu na górê*/
+/*przycisk powrotu na gï¿½rï¿½*/
 
 .button-back-to-top{
     height:45px;

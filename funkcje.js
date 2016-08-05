@@ -72,7 +72,10 @@ document.addEventListener('scroll', function() {
     var header = document.getElementsByClassName('button-back-to-top')[0];
     if (window.pageYOffset == 0) {
         header.classList.add('hide-button');
-    } else {
+    }else if(window.pageYOffset > 2100){
+        header.classList.add('hide-button');
+    }
+    else {
         header.classList.remove('hide-button');
 
     }

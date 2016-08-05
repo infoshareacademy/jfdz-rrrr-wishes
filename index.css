@@ -597,3 +597,57 @@ input[type=submit]{
     display:none;
     background-color: rgba(98, 79, 212,0.0);
 }
+
+/*######################################    MEDIA   ###############################################*/
+@media only screen and (max-width: 800px) {
+
+    .menu{
+        width: auto;
+    }
+    .menu li{
+        margin-right: 10px;
+        margin-top: 0;
+        padding-top: 15px;
+    }
+
+    .menu ul li i{
+        visibility: visible;
+        font-size: 35px;
+        margin-left: 10px;
+    }
+    .menu ul li i:hover{
+        text-shadow:2px 2px 0 gray;
+    }
+    /*po najechaniu kursorem dodaje efekt rozmycia */
+    .hiding{
+        display: none;
+    }
+    .menu ul li:last-child{
+        display: none;
+        /*ten zapis ukrywa sing up. po usunieciu tego zapisu przy skalowaniu strony pojawi sie przy ikonkach tylko napis
+          nie ma przypisanej ikonki
+        */
+    }
+}
+
+/*########  IKONKI    #######3*/
+.ion-ios-home-outline{
+    font-size: 20px;
+    visibility: hidden;
+}
+.ion-ios-at-outline{
+    font-size: 20px;
+    visibility: hidden;
+}
+.ion-ios-people-outline{
+    font-size: 20px;
+    visibility: hidden;
+}
+.ion-ios-more-outline{
+    font-size: 20px;
+    visibility: hidden;
+}
+.ion-ios-star-outline{
+    font-size: 20px;
+    visibility: hidden;
+}

@@ -24,17 +24,6 @@ $(function() {
         }
     });
 });
-/* zr�b transprentne menu podczas przewijania*/
-document.addEventListener('scroll', function() {
-    console.log(window.pageYOffset);
-    var header = document.getElementsByClassName('page-section-header')[0];
-    if (window.pageYOffset ==0) {
-        header.classList.add('small-page-section-header');
-    } else {
-        header.classList.remove('small-page-section-header');
-
-    }
-});
 
 
 //próbna funkcja
@@ -54,10 +43,7 @@ $().ready(function() {
         $("#cookie-warn").show();
     }
 });
-
-
 $("#slideshow > div:gt(0)").hide();
-var v = document.getElementsByTagName("video")[0];
 
 setInterval(function() { // to do choose devtips solutions devtips
     $('#slideshow > div:first')
@@ -66,23 +52,23 @@ setInterval(function() { // to do choose devtips solutions devtips
         .fadeIn(1000)
         .end()
         .appendTo('#slideshow');
-    v.play();
 },  10000);
-
-
 
 document.addEventListener('scroll', function() {
 
-    console.log(window.pageYOffset);
+    console.log(window.pageYOffset, $('#contact').offset().top,$('#contact').height(),$('#contact').position().top,window.innerHeight);
 
     var header = document.getElementsByClassName('button-back-to-top')[0];
     if (window.pageYOffset == 0) {
         header.classList.add('hide-button');
-    }else if(window.pageYOffset > 2100){
-        header.classList.add('hide-button');
+    }else if(window.pageYOffset + window.innerHeight > $('#contact').position().top ){ // jezeli uzytkownik widzi sekcje contact
+        header.classList.add('move-button');
+
     }
     else {
         header.classList.remove('hide-button');
+        header.classList.remove('move-button');
 
     }
 });
+

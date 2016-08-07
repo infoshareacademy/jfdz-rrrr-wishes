@@ -24,17 +24,6 @@ $(function() {
         }
     });
 });
-/* zr�b transprentne menu podczas przewijania*/
-document.addEventListener('scroll', function() {
-    console.log(window.pageYOffset);
-    var header = document.getElementsByClassName('page-section-header')[0];
-    if (window.pageYOffset ==0) {
-        header.classList.add('nowaKlasa');
-    } else {
-        header.classList.remove('nowaKlasa');
-
-    }
-});
 
 
 //próbna funkcja
@@ -67,16 +56,20 @@ setInterval(function() { // to do choose devtips solutions devtips
 
 document.addEventListener('scroll', function() {
 
-    console.log(window.pageYOffset);
+    console.log(window.pageYOffset, $('#contact').offset().top,$('#contact').height(),$('#contact').position().top,window.innerHeight);
 
     var header = document.getElementsByClassName('button-back-to-top')[0];
     if (window.pageYOffset == 0) {
         header.classList.add('hide-button');
-    }else if(window.pageYOffset > 2100){
-        header.classList.add('hide-button');
+    }else if(window.pageYOffset + window.innerHeight > $('#contact').position().top ){ // jezeli uzytkownik widzi sekcje contact
+        header.classList.add('move-button');
+        
     }
     else {
         header.classList.remove('hide-button');
+        header.classList.remove('move-button');
 
     }
 });
+
+

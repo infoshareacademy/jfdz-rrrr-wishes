@@ -31,8 +31,9 @@ video {
     right: 0;
     z-index: 100;
 }
-.nowaKlasa{
+.small-page-section-header{
     background-color: rgba(38, 50, 56, 0.0);
+
 }
 /*#########probka ze slideshow###########*/
 #slideshow {
@@ -336,6 +337,7 @@ video {
     }
 /*############### contact ####################*/
 #contact{
+    position: relative;
     background-color: #292d43;
     padding:80px 0px;
  }
@@ -488,6 +490,9 @@ label{
     margin-right:10px;
     opacity:0.8;
 }
+.antybot{
+    font-size:14px;
+   }
 input[type=submit]{
     border-style: solid;
     border-width: 1px;
@@ -501,12 +506,25 @@ input[type=submit]{
     letter-spacing:1px;
     padding: 10px 32px;
     text-decoration: none;
-    margin-top:20px;
+    margin-top:40px;
     margin-bottom:20px;
     cursor: pointer;
     position:absolute;
     left:140px;
     }
+
+
+input[type=checkbox]{
+    width: 11px;
+    height: 11px;
+    border: 1px solid #808080;
+    border-radius:50%;
+    margin-right:10px;
+    background:rgba(255,255,255,0.2);
+   }
+
+
+
 #name-field {
     border-style:solid;
     border-bottom-width:1px;
@@ -594,10 +612,16 @@ input[type=submit]{
 
 }
 .hide-button{
+
     display:none;
     background-color: rgba(98, 79, 212,0.0);
 }
 
+.move-button {
+    top: -70px;
+    position: absolute;
+
+}
 /*######################################    MEDIA   ###############################################*/
 @media only screen and (max-width: 800px) {
 

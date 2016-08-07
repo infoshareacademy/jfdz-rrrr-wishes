@@ -336,6 +336,7 @@ video {
     }
 /*############### contact ####################*/
 #contact{
+    position: relative;
     background-color: #292d43;
     padding:80px 0px;
  }
@@ -610,8 +611,15 @@ input[type=checkbox]{
 
 }
 .hide-button{
+
     display:none;
     background-color: rgba(98, 79, 212,0.0);
+}
+
+.move-button {
+    top: -70px;
+    position: absolute;
+
 }
 
 /*######################################    MEDIA   ###############################################*/

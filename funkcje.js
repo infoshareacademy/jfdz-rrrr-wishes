@@ -44,6 +44,7 @@ $().ready(function() {
     }
 });
 $("#slideshow > div:gt(0)").hide();
+var v = document.getElementsByTagName("video")[0];
 
 setInterval(function() { // to do choose devtips solutions devtips
     $('#slideshow > div:first')
@@ -52,7 +53,8 @@ setInterval(function() { // to do choose devtips solutions devtips
         .fadeIn(1000)
         .end()
         .appendTo('#slideshow');
-},  10000);
+    v.play();
+}, 10000);
 
 document.addEventListener('scroll', function() {
 

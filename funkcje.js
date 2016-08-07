@@ -29,9 +29,9 @@ document.addEventListener('scroll', function() {
     console.log(window.pageYOffset);
     var header = document.getElementsByClassName('page-section-header')[0];
     if (window.pageYOffset ==0) {
-        header.classList.add('nowaKlasa');
+        header.classList.add('small-page-section-header');
     } else {
-        header.classList.remove('nowaKlasa');
+        header.classList.remove('small-page-section-header');
 
     }
 });
@@ -54,7 +54,10 @@ $().ready(function() {
         $("#cookie-warn").show();
     }
 });
+
+
 $("#slideshow > div:gt(0)").hide();
+var v = document.getElementsByTagName("video")[0];
 
 setInterval(function() { // to do choose devtips solutions devtips
     $('#slideshow > div:first')
@@ -63,7 +66,10 @@ setInterval(function() { // to do choose devtips solutions devtips
         .fadeIn(1000)
         .end()
         .appendTo('#slideshow');
+    v.play();
 },  10000);
+
+
 
 document.addEventListener('scroll', function() {
 

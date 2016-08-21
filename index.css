@@ -16,11 +16,14 @@
 #banner {
     height:700px;
     width:100%;
+    background-size:contain;
+    background-position:bottom center;
 }
 video {
     width: 100%;
     position: absolute;
     z-index: -1;
+
 }
 .page-section-header{
     background-color: rgba(38, 50, 56, 0.8);
@@ -30,11 +33,29 @@ video {
     left: 0;
     right: 0;
     z-index: 100;
+    height:76px;
 }
 .small-page-section-header{
     background-color: rgba(38, 50, 56, 0.0);
-
 }
+.smaller-height-navigation{
+    height:38px;
+    }
+.smaller-height-navigation .logo{
+    height:15px;
+    font-size:15px;
+    line-height:19px;
+    padding-left:30px;
+    margin:10px 15px;
+}
+.smaller-height-navigation .menu a {
+    font-size: 10px;
+}
+
+.smaller-height-navigation .menu li {
+    margin-top: 5px;
+    margin-right: 50px;
+   }
 /*#########probka ze slideshow###########*/
 #slideshow {
    position: relative;
@@ -47,8 +68,8 @@ video {
  }
 .item{
     background-image: url('images/background-image-banner.jpg');
-    background-size:cover;
-    background-position: center center;
+    background-size:contain;
+    background-position: bottom center;
 }
 /*######## logo###########*/
 .logo{
@@ -65,13 +86,14 @@ video {
     padding-left:48px;
     margin:23px;
     letter-spacing:2px;
+    transition:height 0.25s,font-size 0.25s;
 }
 /*########## navigation ###############*/
 .menu li{
     margin-top:30px;
     margin-right: 50px;
     display: inline-block;
-    }
+        }
 .menu a{
     text-decoration:none;
     text-transform: uppercase;
@@ -80,6 +102,7 @@ video {
     font-size: 12px;
     letter-spacing: 1px;
     font-family: 'Raleway',sans-serif,arial;
+    transition:font-size 0.25s;
 }
 .menu a:hover{
     color:#FC7753;

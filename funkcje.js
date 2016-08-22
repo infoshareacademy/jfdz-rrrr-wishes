@@ -25,6 +25,14 @@ $(function() {
     });
 });
 
+    function oknoAlert() {
+        alert('To jest okienko alert');
+    }
+
+document.getElementById('guzik').addEventListener('click', function() {
+    oknoAlert()
+});
+
 /* zr�b transprentne menu podczas przewijania*/
 document.addEventListener('scroll', function() {
     console.log(window.pageYOffset);

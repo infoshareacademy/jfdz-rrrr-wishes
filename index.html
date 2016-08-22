@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -9,37 +10,41 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="index.css" type="text/css"/>
+
+    <link rel="stylesheet" type="text/css" href="sandbox/Daniel/ikonki/css/ionicons.css">
+    <!--NARAZIE TAKIE PRZEKIRUNKOWANIE POTEM TRZEBA TO ZMIENIC-->
 </head>
 <body>
-<a href="#banner" class="button-back-to-top"></a>
+
 <section id="banner">
- <div id="slideshow">
-  <div><video autoplay loop muted poster="images/background-image-banner.jpg">
-     <source src="images/Explore-HD.mp4" type=video/mp4>
-         <p>This browser does not support the video element</p>
-     </video></div>
-  <div class="item"></div>
- </div>
+    <div id="slideshow">
+        <div><video autoplay loop muted poster="images/background-image-banner.jpg">
+            <source src="images/Explore-HD.mp4" type=video/mp4>
+            <p>This browser does not support the video element</p>
+        </video></div>
+        <div class="item"></div>
+    </div>
     <div class="wrapper">
         <header id="page-section-header" class="page-section-header">
             <div class="clear"></div>
             <div class="logo left">Lora</div>
+            <!--DODANIE IKONEK-->
             <nav class="menu right">
                 <ul>
                     <li>
-                        <a href="#banner">Home</a>
+                        <a href="#banner"><span class="hiding">Home</span><i class="ion-ios-home-outline"></i></a>
                     </li>
                     <li>
-                        <a href="#description">About</a>
+                        <a href="#description"><span class="hiding">About</span><i class="ion-ios-more-outline"></i></a>
                     </li>
                     <li>
-                        <a href="#features">Features</a>
+                        <a href="#features"><span class="hiding">Features</span><i class="ion-ios-star-outline"></i></a>
                     </li>
                     <li>
-                        <a href="#team">Team</a>
+                        <a href="#team"><span class="hiding">Team</span><i class="ion-ios-people-outline"></i></a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact"><span class="hiding">Contact</span><i class="ion-ios-at-outline"></i></a>
                     </li>
                     <li>
                         <a href="#openModal" onclick="openModal()">Sign up</a>
@@ -120,8 +125,8 @@
         <div class="cta-button" onclick="openModal()">
             <a href="#openModal">Click for discount</a>
         </div>
-        </div>
-    </section>
+    </div>
+</section>
 <section id="team">
     <div class="team-wrapper">
         <h2>Team</h2>
@@ -134,7 +139,7 @@
         <div class="person marta">
             <h3>Marta</h3>
             <p>Przede wszystkim<br>kocham estetykę i prostotę.
-            Pasjonuję się ideą slow life i projektowaniem.</p>
+                Pasjonuję się ideą slow life i projektowaniem.</p>
         </div>
         <div class="person marcin">
             <h3>Marcin</h3>
@@ -144,7 +149,7 @@
         <div class="person pawel">
             <h3>Paweł</h3>
             <p>Moją pasją jest odnawianie archaicznych projektów.
-            Uwielbiam ruch i energiczne działanie.</p>
+                Uwielbiam ruch i energiczne działanie.</p>
         </div>
     </div>
 </section>
@@ -163,12 +168,13 @@
         </div>
         <p class="copyright">&copy; copyright by RRRR</p>
     </div>
-        <div class="social-contact right">
-            <a href="https://twitter.com/" class="social-icon icon-twitter"></a>
-            <a href="https://www.facebook.com/infoshareacademy/" class="social-icon icon-facebook"></a>
-            <a href="https://www.instagram.com/" class="social-icon icon-instagram"></a>
-        </div>
+    <div class="social-contact right">
+        <a href="https://twitter.com/" class="social-icon icon-twitter"></a>
+        <a href="https://www.facebook.com/infoshareacademy/" class="social-icon icon-facebook"></a>
+        <a href="https://www.instagram.com/" class="social-icon icon-instagram"></a>
+    </div>
     <div class="clear"></div>
+    <a href="#banner" class="button-back-to-top"></a>
 </footer>
 
 <!--#####################Modal Window#############################-->
@@ -189,17 +195,17 @@
             <input type="email" id="email-field" name="email-adress"
                    required
                    pattern="[A-Z]{5[0-9{5}"
-                  />
+            />
             <div class="clear"></div>
             <label><input type="checkbox">Nie jestem robotem :)</label>
             <input type="submit" value="send" onclick="test()">
-    </form>
+        </form>
     </div>
 </div>
 
 <section id="cookie-warn">
     <p><strong>UWAGA!</strong>
-       Niniejsza strona wykorzystuje pliki cookies.
+        Niniejsza strona wykorzystuje pliki cookies.
         Informacje uzyskane za pomocą cookies wykorzystywane są głównie
         w celach statystycznych. Pozostając na stronie godzisz się na
         ich zapisywanie w Twojej przeglądarce.

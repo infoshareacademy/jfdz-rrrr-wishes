@@ -12,7 +12,7 @@ openModal = function() {
 /* smooth przewijanie pomi�dzy sekcjami pomija link do otworzenia okienka modal*/
 $(function() {
     $('a[href*=#]:not([href=#]):not([href=#openModal])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        if (location.pathname.replace(/^\//,'') ==this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target =$(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
@@ -24,14 +24,27 @@ $(function() {
         }
     });
 });
+
 /* zr�b transprentne menu podczas przewijania*/
 document.addEventListener('scroll', function() {
     console.log(window.pageYOffset);
     var header = document.getElementsByClassName('page-section-header')[0];
     if (window.pageYOffset ==0) {
-        header.classList.add('nowaKlasa');
+        header.classList.add('small-page-section-header');
     } else {
-        header.classList.remove('nowaKlasa');
+        header.classList.remove('small-page-section-header');
+
+    }
+});
+
+/* zmniejszane menu*/
+document.addEventListener('scroll', function() {
+    console.log(window.pageYOffset);
+    var header = document.getElementsByClassName('page-section-header')[0];
+    if (window.pageYOffset >= 636) {
+        header.classList.add('smaller-height-navigation');
+    } else {
+        header.classList.remove('smaller-height-navigation');
 
     }
 });
@@ -55,6 +68,7 @@ $().ready(function() {
     }
 });
 $("#slideshow > div:gt(0)").hide();
+var v = document.getElementsByTagName("video")[0];
 
 setInterval(function() { // to do choose devtips solutions devtips
     $('#slideshow > div:first')
@@ -63,17 +77,24 @@ setInterval(function() { // to do choose devtips solutions devtips
         .fadeIn(1000)
         .end()
         .appendTo('#slideshow');
-},  10000);
+    v.play();
+}, 10000);
 
 document.addEventListener('scroll', function() {
 
-    console.log(window.pageYOffset);
+    console.log(window.pageYOffset, $('#contact').offset().top,$('#contact').height(),$('#contact').position().top,window.innerHeight);
 
     var header = document.getElementsByClassName('button-back-to-top')[0];
     if (window.pageYOffset == 0) {
         header.classList.add('hide-button');
-    } else {
+    }else if(window.pageYOffset + window.innerHeight > $('#contact').position().top ){ // jezeli uzytkownik widzi sekcje contact
+        header.classList.add('move-button');
+
+    }
+    else {
         header.classList.remove('hide-button');
+        header.classList.remove('move-button');
 
     }
 });
+

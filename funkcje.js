@@ -25,13 +25,22 @@ $(function() {
     });
 });
 
-    function oknoAlert() {
-        alert('To jest okienko alert');
-    }
+//http://www.poradnik-webmastera.com/kursy/javascript/formularze.php
+//     function oknoAlert() {
+//         alert('czesc');
+//     }
+//
+// document.getElementById('guzik').addEventListener('click', function() {
+//     oknoAlert()
+// });
 
-document.getElementById('guzik').addEventListener('click', function() {
-    oknoAlert()
-});
+function test() {
+        alert('Dziekuję');
+}
+
+
+
+
 
 /* zr�b transprentne menu podczas przewijania*/
 document.addEventListener('scroll', function() {

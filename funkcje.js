@@ -34,10 +34,20 @@ $(function() {
 //     oknoAlert()
 // });
 
-function test() {
-        alert('Dziekuję');
+// function test() {
+//         alert('Dziekuję');
+// }
+
+function sayHello() {
+    alert('witaj')
 }
 
+var btn = document.querySelector('#guzik');
+
+btn.addEventListener('click',sayHello,false );
+btn.addEventListener('click',function () {
+    test();
+},false );
 
 
 

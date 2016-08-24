@@ -646,25 +646,30 @@ input[type=checkbox]{
 }
 /*######################################    MEDIA   ###############################################*/
 @media only screen and (max-width: 800px) {
-
     .menu{
-        width: auto;
+      width: auto;
     }
     .menu li{
         margin-right: 10px;
         margin-top: 0;
-        padding-top: 15px;
+        padding-top: 0;
     }
-
     .menu ul li i{
         visibility: visible;
-        font-size: 35px;
-        margin-left: 10px;
+        font-size: 25px;
+        margin-left: 50px;
+        margin-top: 0;
+    }
+    .smaller-height-navigation{
+        height:auto;
+    }
+    .smaller-height-navigation .logo{
+        margin-left: 50%;
+        margin-right: 50%;
     }
     .menu ul li i:hover{
         text-shadow:2px 2px 0 gray;
     }
-    /*po najechaniu kursorem dodaje efekt rozmycia */
     .hiding{
         display: none;
     }
@@ -674,7 +679,10 @@ input[type=checkbox]{
           nie ma przypisanej ikonki
         */
     }
+
 }
+
+
 
 /*########  IKONKI    #######3*/
 .ion-ios-home-outline{

@@ -1,7 +1,7 @@
 /**
  * Created by martastachecka on 18.06.16.
  */
-
+/*####################  MODEL WINDOW    ################*/
 closeModal = function() {
     $('#openModal').hide();
 };
@@ -9,6 +9,17 @@ closeModal = function() {
 openModal = function() {
     $('#openModal').show();
 };
+
+/*####################  MODEL GAME    ################*/
+
+closeGame = function () {
+    $('#openGame').hide();
+};
+
+openGame = function () {
+    $('#openGame').show();
+};
+
 /* smooth przewijanie pomi�dzy sekcjami pomija link do otworzenia okienka modal*/
 $(function() {
     $('a[href*=#]:not([href=#]):not([href=#openModal])').click(function() {

@@ -461,15 +461,13 @@ margin-left:400px;
     bottom: 0;
     left: 0;
     background: rgba(0,0,0,0.6);
-    z-index: 99999;
+    z-index: 99998;
     opacity:1;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     /*pointer-events: none;*/
 }
-
-
 
 .modalDialog > div {
     height:350px;
@@ -645,7 +643,7 @@ input[type=checkbox]{
 
 }
 /*######################################    MEDIA   ###############################################*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .menu{
       width: auto;
     }
@@ -705,3 +703,31 @@ input[type=checkbox]{
     font-size: 20px;
     visibility: hidden;
 }
+
+/*############################# GAME ###################################*/
+
+.modelGame{
+    position: fixed;
+    /*ODKOMENTOWAC POTEM*/
+    /*top:0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    top:15%;
+    bottom: 15%;
+    right: 15%;
+    left: 15%;
+    background: rgba(0,0,0,0.6);
+
+}
+#board{
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: red;
+    z-index: 99999;
+    position: relative;
+}
+

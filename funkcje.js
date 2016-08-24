@@ -19,6 +19,13 @@ closeGame = function () {
 openGame = function () {
     $('#openGame').show();
 };
+/*####################  GAME    ################*/
+
+
+// .......
+
+
+
 
 /* smooth przewijanie pomi�dzy sekcjami pomija link do otworzenia okienka modal*/
 $(function() {
@@ -59,8 +66,6 @@ btn.addEventListener('click',sayHello,false );
 btn.addEventListener('click',function () {
     test();
 },false );
-
-
 
 
 /* zr�b transprentne menu podczas przewijania*/

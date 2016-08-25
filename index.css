@@ -713,20 +713,20 @@ input[type=checkbox]{
     /*bottom: 0;*/
     /*right: 0;*/
     /*left: 0;*/
-    top:15%;
-    bottom: 15%;
-    right: 15%;
-    left: 15%;
+    top:5%;
+    bottom: 5%;
+    right: 5%;
+    left: 5%;
     background: rgba(0,0,0,0.6);
 
 }
 #board{
-    width: 600px;
-    height: 600px;
+    width: 680px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
-    background-color: red;
+    background-color: #F88989;
     z-index: 99999;
     position: relative;
 }
@@ -734,13 +734,28 @@ input[type=checkbox]{
 #area{
     width: 500px;
     height: 400px;
-    background-color: yellow;
-
+    border: 1px solid black;
+    background-color: lightgray;
+    float: left;
 }
 #score
 {
     width: 100px;
     font-size: 15px;
     background-color: yellowgreen;
+    float: left;
 }
 
+.closeGame {
+    background-image:url('images/icon-close-modal-window-white.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+
+    height:35px;
+    width:35px;
+    line-height: 25px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}

@@ -654,6 +654,9 @@ input[type=checkbox]{
         padding-top: 0;
 
     }
+    .menu ul{
+        text-align: center;
+    }
     .menu ul li i{
         visibility: visible;
         font-size: 25px;
@@ -678,7 +681,6 @@ input[type=checkbox]{
     }
 
 }
-
 
 
 /*########  IKONKI    #######3*/

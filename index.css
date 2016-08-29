@@ -40,7 +40,8 @@ video {
     background-color: rgba(38, 50, 56, 0.0);
 }
 .smaller-height-navigation{
-    height:38px;
+    height:60px;
+
     }
 .smaller-height-navigation .logo{
     height:15px;
@@ -91,7 +92,7 @@ video {
 }
 /*########## navigation ###############*/
 .menu li{
-    margin-top:30px;
+    margin-top:5px;
     margin-right: 50px;
     display: inline-block;
         }

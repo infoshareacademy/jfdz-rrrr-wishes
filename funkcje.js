@@ -237,17 +237,6 @@ $(function() {
 });
 
 //http://www.poradnik-webmastera.com/kursy/javascript/formularze.php
-//     function oknoAlert() {
-//         alert('czesc');
-//     }
-//
-// document.getElementById('guzik').addEventListener('click', function() {
-//     oknoAlert()
-// });
-
-// function test() {
-//         alert('Dziekuję');
-// }
 
 // function sayHello() {
 //     alert('witaj')
@@ -260,12 +249,12 @@ $(function() {
 //     test();
 // },false );
 
-$('#guzik').click(function(event){
+$('#guzik ').click(function(){
     var name = $('#user-name');
     var email = $('#email-field');
 
 
-    if(name.value == ' ' && email.value == ' '){
+    if(name.value === ' ' && email.value === ' '){
 
         alert("Pomyślnie wysłano formularz.");
     }
@@ -273,7 +262,6 @@ $('#guzik').click(function(event){
 
         alert("Uzupełnij wszystkie pola!");
     }
-
 });
 
 /* zr�b transprentne menu podczas przewijania*/

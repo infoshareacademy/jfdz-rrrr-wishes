@@ -249,17 +249,32 @@ $(function() {
 //         alert('Dziekuję');
 // }
 
-function sayHello() {
-    alert('witaj')
-}
+// function sayHello() {
+//     alert('witaj')
+// }
+//
+// var btn = document.querySelector('#guzik');
+//
+// btn.addEventListener('click',sayHello,false );
+// btn.addEventListener('click',function () {
+//     test();
+// },false );
 
-var btn = document.querySelector('#guzik');
+$('#guzik').click(function(event){
+    var name = $('#user-name');
+    var email = $('#email-field');
 
-btn.addEventListener('click',sayHello,false );
-btn.addEventListener('click',function () {
-    test();
-},false );
 
+    if(name.value == ' ' && email.value == ' '){
+
+        alert("Pomyślnie wysłano formularz.");
+    }
+    else {
+
+        alert("Uzupełnij wszystkie pola!");
+    }
+
+});
 
 /* zr�b transprentne menu podczas przewijania*/
 document.addEventListener('scroll', function() {

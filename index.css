@@ -109,6 +109,10 @@ video {
 .menu a:hover{
     color:#FC7753;
 }
+
+.menu a:focus{
+    color: red;
+}
 /*########### banner ###############*/
 .banner-title{
     margin:0 auto;

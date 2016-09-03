@@ -334,15 +334,3 @@ document.addEventListener('scroll', function() {
 
     }
 });
-
-$('.ani').on('click',function() {
-
-    var rect = $(this);
-
-    rect.animate({
-
-        opacity: 0.5
- 
-    }, 1500);
-
-});

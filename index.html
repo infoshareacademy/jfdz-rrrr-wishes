@@ -210,19 +210,19 @@
         <form id="formularz" action="">
             <label for="name-field">Name</label>
             <input id="name-field"
-                   name="user-name"
+                   name="nameFirst"
                    required
                    pattern="[A-Z]{5[0-9{5}"
                    type="text"/>
             <div class="clear"></div>
             <label for="email-field">E-mail</label>
-            <input type="email" id="email-field" name="email-adress"
+            <input type="email" id="email-field" name="adressFirst"
                    required
                    pattern="[A-Z]{5[0-9{5}"
             />
             <div class="clear"></div>
             <label><input type="checkbox">Nie jestem robotem :)</label>
-            <input type="submit" id="guzik" value="send"> <!--onclick="test()" -->
+            <input type="submit" id="guzik" value="send" onclick="sprawdz_formularz()">
 
         </form>
     </div>

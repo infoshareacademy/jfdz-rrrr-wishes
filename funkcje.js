@@ -235,34 +235,32 @@ $(function() {
         }
     });
 });
-
-//http://www.poradnik-webmastera.com/kursy/javascript/formularze.php
-
-// function sayHello() {
-//     alert('witaj')
-// }
-//
-// var btn = document.querySelector('#guzik');
-//
-// btn.addEventListener('click',sayHello,false );
-// btn.addEventListener('click',function () {
-//     test();
-// },false );
-
-$('#guzik ').click(function(){
-    var name = $('#user-name');
-    var email = $('#email-field');
-
-
-    if(name.value === ' ' && email.value === ' '){
-
-        alert("Pomyślnie wysłano formularz.");
+//####################KOMUNIKAT PO WYSLANIU FORMULARZA###########################
+function sprawdz_formularz()
+{
+    // przypisanie obiektu formularza do zmiennej
+    var f = document.forms['formularz'];
+    // sprawdzenie imienia
+    if (f.nameFirst.value == '')
+    {
+        alert('Musisz wpisać imię!');
+        f.nameFirst.focus();
+        return false;
     }
-    else {
-
-        alert("Uzupełnij wszystkie pola!");
+    // sprawdzenie Email
+    if (f.adressFirst.value == '')
+    {
+        alert('Musisz wpisać E-mail!');
+        f.adressFirst.focus();
+        return false;
     }
-});
+    alert("Dziekuje... :) ");
+    // formularz jest wypelniony poprawnie
+    return true;
+}
+
+//####################END KOMUNIKAT PO WYSLANIU FORMULARZA END  #####
+
 
 /* zr�b transprentne menu podczas przewijania*/
 document.addEventListener('scroll', function() {

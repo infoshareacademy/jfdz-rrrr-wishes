@@ -103,7 +103,7 @@ video {
     font-size: 12px;
     letter-spacing: 1px;
     font-family: 'Raleway',sans-serif,arial;
-    transition:font-size 0.25s;
+    transition:font-size 0.25s, font-weight 0.25s, color 0.25s;
 }
 .menu a:hover{
     color:#FC7753;

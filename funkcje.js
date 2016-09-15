@@ -243,14 +243,12 @@ function sprawdz_formularz()
     // sprawdzenie imienia
     if (f.nameFirst.value == '')
     {
-        alert('Musisz wpisać imię!');
         f.nameFirst.focus();
         return false;
     }
     // sprawdzenie Email
     if (f.adressFirst.value == '')
     {
-        alert('Musisz wpisać E-mail!');
         f.adressFirst.focus();
         return false;
     }

@@ -332,3 +332,45 @@ document.addEventListener('scroll', function() {
 
     }
 });
+
+// $(document).ready(function () {
+//
+//     $('#features').mousemove(function () {
+//         $( ".icon" ).on({ mouseenter: function() {
+//                 $( this ).toggleClass( "active" );
+//             }, mouseenter: function() {
+//                 $( this ).addClass( "inside" );
+//             }, mouseleave: function() {
+//                 $( this ).removeClass( "inside" );
+//             }
+//         });
+//     })
+//
+// });
+
+// $(document).ready(function () {
+//
+//     $('#features').mousemove(function () {
+//
+//         $('.icon').fadeIn(3000);
+//
+//     })
+//     return false;
+// });
+
+$(document).ready(function () {
+    $( ".icon" )
+        .on( "mouseenter", function() {
+            $( this ).css({
+                "background-color": "yellow"
+
+            });
+        })
+        .on( "mouseleave", function() {
+            var styles = {
+                backgroundColor : ""
+
+            };
+            $( this ).css( styles );
+        });
+})

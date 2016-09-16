@@ -70,7 +70,7 @@ video {
  }
 .item{
     background-image: url('images/background-image-banner.jpg');
-    background-size:contain;
+    background-size: cover;
     background-position: bottom center;
 }
 /*######## logo###########*/
@@ -233,6 +233,15 @@ video {
     background-position:center center;
     background-size:contain;
     margin:70px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.6s ease-out .1s
+}
+.icon:hover{
+    -webkit-transform: scale(1.1) translate(0px, 5px); /*chrom. skalowanie obrazka*/
+    -moz-transform: scale(1.1) translate(0px, 5px); /*mozila. skalowanie wielkosci obrazka*/
+
+    -webkit-transition: -webkit-transform 1s ease-in .1s;
+
 }
 .icon-on-time{
     background-image:url('images/icon-heart-calendar-features-white.png');

@@ -332,3 +332,15 @@ document.addEventListener('scroll', function() {
 
     }
 });
+//############ Po najechaniu myszka na obrazek w sekcji TEAM ##########
+$(document).ready(function() {
+    // $('.person h3').css('opacity', 1);
+    // $('.person h3').css('cursor', 'pointer');
+
+    $('.person h3').hover(function() { //kursor wchodzi
+        $(this).stop().animate({'opacity': 0.5}, "slow").css({color:'black'});
+    },function() { //kursor wychodzi
+        $(this).stop().animate({'opacity': 1}, "slow").css({color: ''});
+    });
+});
+//##################### END ####################

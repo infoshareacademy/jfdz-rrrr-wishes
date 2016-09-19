@@ -253,7 +253,7 @@ function sprawdz_formularz()
         return false;
     }
     if(!f.remember.checked == true){
-        
+
         alert('nie zaznaczyles pola!');
         return false;
     }
@@ -263,7 +263,7 @@ function sprawdz_formularz()
         return true;
     }
     // formularz jest wypelniony poprawnie
-    // return true;
+    return true;
 }
 
 //####################END KOMUNIKAT PO WYSLANIU FORMULARZA END  #####

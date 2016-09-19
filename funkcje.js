@@ -252,9 +252,18 @@ function sprawdz_formularz()
         f.adressFirst.focus();
         return false;
     }
-    alert("Dziekuje... :) ");
+    if(!f.remember.checked == true){
+        
+        alert('nie zaznaczyles pola!');
+        return false;
+    }
+    else
+    {
+        alert("Dziekuje... :) ");
+        return true;
+    }
     // formularz jest wypelniony poprawnie
-    return true;
+    // return true;
 }
 
 //####################END KOMUNIKAT PO WYSLANIU FORMULARZA END  #####

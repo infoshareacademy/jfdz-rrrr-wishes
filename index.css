@@ -33,13 +33,15 @@ video {
     left: 0;
     right: 0;
     z-index: 100;
-    height:76px;
+    /*wysokosc menu jest automatyczna*/
+    /*height:76px;*/
 }
 .small-page-section-header{
     background-color: rgba(38, 50, 56, 0.0);
 }
 .smaller-height-navigation{
-    height:38px;
+    height:60px;
+
     }
 .smaller-height-navigation .logo{
     height:15px;
@@ -68,7 +70,7 @@ video {
  }
 .item{
     background-image: url('images/background-image-banner.jpg');
-    background-size:contain;
+    background-size: cover;
     background-position: bottom center;
 }
 /*######## logo###########*/
@@ -90,7 +92,7 @@ video {
 }
 /*########## navigation ###############*/
 .menu li{
-    margin-top:30px;
+    margin-top:5px;
     margin-right: 50px;
     display: inline-block;
         }
@@ -106,6 +108,10 @@ video {
 }
 .menu a:hover{
     color:#FC7753;
+}
+
+.menu a:focus{
+    color: #FC7753;
 }
 /*########### banner ###############*/
 .banner-title{
@@ -158,6 +164,11 @@ video {
     font-family:'Lora',Baskerville, serif;
     box-shadow: 0px 10px 19px -9px rgba(87,66,87,1);
     opacity:1;
+    transition-property:background-color;
+    transition-duration:2s;
+
+    -webkit-transition-property:background-color;
+    -webkit-transition-duration:2s;
     }
 #description h2{
     font-size:50px;
@@ -186,6 +197,9 @@ video {
     margin-right:15px;
     margin-top:30px;
    }
+#description:hover{
+    background-color: #BCB0B4;
+}
 /*############### features section ####################*/
 #features{
     margin-top:-4px;
@@ -219,6 +233,15 @@ video {
     background-position:center center;
     background-size:contain;
     margin:70px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.6s ease-out .1s
+}
+.icon:hover{
+    -webkit-transform: scale(1.1) translate(0px, 5px); /*chrom. skalowanie obrazka*/
+    -moz-transform: scale(1.1) translate(0px, 5px); /*mozila. skalowanie wielkosci obrazka*/
+
+    -webkit-transition: -webkit-transform 1s ease-in .1s;
+
 }
 .icon-on-time{
     background-image:url('images/icon-heart-calendar-features-white.png');
@@ -293,9 +316,17 @@ video {
     flex-flow: row wrap;
     box-shadow: 0px 10px 19px -9px rgba(87,66,87,1);
     opacity:1;
+    transition-property:background-color;
+    transition-duration:2s;
+
+    -webkit-transition-property:background-color;
+    -webkit-transition-duration:2s;
 }
 .team-wrapper{
     margin:0 auto!important;
+}
+#team:hover{
+    background-color: #CCCCCC;
 }
 
 #team h2 {
@@ -461,15 +492,13 @@ margin-left:400px;
     bottom: 0;
     left: 0;
     background: rgba(0,0,0,0.6);
-    z-index: 99999;
+    z-index: 99998;
     opacity:1;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     /*pointer-events: none;*/
 }
-
-
 
 .modalDialog > div {
     height:350px;
@@ -645,28 +674,34 @@ input[type=checkbox]{
 
 }
 /*######################################    MEDIA   ###############################################*/
-@media only screen and (max-width: 800px) {
-
+@media only screen and (max-width: 900px) {
     .menu{
-        width: auto;
+      width: auto;
     }
     .menu li{
         margin-right: 10px;
-        margin-top: 0;
-        padding-top: 15px;
-    }
+        margin-top: 20px;
+        padding-top: 0;
 
+    }
+    .menu ul{
+        text-align: center;
+    }
     .menu ul li i{
         visibility: visible;
-        font-size: 35px;
-        margin-left: 10px;
+        font-size: 25px;
+        /*margin-left: 50px;*/
+        margin-top: 0;
     }
+    .smaller-height-navigation{
+        height:auto;
+    }
+
     .menu ul li i:hover{
         text-shadow:2px 2px 0 gray;
     }
-    /*po najechaniu kursorem dodaje efekt rozmycia */
     .hiding{
-        display: none;
+        /*display: none;*/
     }
     .menu ul li:last-child{
         display: none;
@@ -674,7 +709,9 @@ input[type=checkbox]{
           nie ma przypisanej ikonki
         */
     }
+
 }
+
 
 /*########  IKONKI    #######3*/
 .ion-ios-home-outline{
@@ -696,4 +733,60 @@ input[type=checkbox]{
 .ion-ios-star-outline{
     font-size: 20px;
     visibility: hidden;
+}
+
+/*############################# GAME ###################################*/
+
+.modelGame{
+    position: fixed;
+    /*ODKOMENTOWAC POTEM*/
+    /*top:0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    top:5%;
+    bottom: 5%;
+    right: 5%;
+    left: 5%;
+    background: rgba(0,0,0,0.6);
+
+}
+#board{
+    width: 680px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: #F88989;
+    z-index: 99999;
+    position: relative;
+}
+
+#area{
+    width: 500px;
+    height: 400px;
+    border: 1px solid black;
+    background-color: lightgray;
+    float: left;
+}
+#score
+{
+    width: 100px;
+    font-size: 15px;
+    background-color: yellowgreen;
+    float: left;
+}
+
+.closeGame {
+    background-image:url('images/icon-close-modal-window-white.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+
+    height:35px;
+    width:35px;
+    line-height: 25px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
 }

@@ -5,6 +5,7 @@
 
     <meta charset="UTF-8">
     <title>Wishes</title>
+    <meta name="viewport" content="initial-scale=1">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
@@ -29,26 +30,48 @@
             <div class="clear"></div>
             <div class="logo left">Lora</div>
             <!--DODANIE IKONEK-->
+            <!--DODALEM CLSS="ANI" TYLKO NA TESTY-->
             <nav class="menu right">
                 <ul>
                     <li>
-                        <a href="#banner"><span class="hiding">Home</span><i class="ion-ios-home-outline"></i></a>
+                        <a href="#banner"><i class="ion-ios-home-outline"></i><br><span class="hiding">Home</span></a>
                     </li>
                     <li>
-                        <a href="#description"><span class="hiding">About</span><i class="ion-ios-more-outline"></i></a>
+                        <a href="#description"><i class="ion-ios-more-outline"></i><br><span class="hiding">About</span></a>
                     </li>
                     <li>
-                        <a href="#features"><span class="hiding">Features</span><i class="ion-ios-star-outline"></i></a>
+                        <a href="#features"><i class="ion-ios-star-outline"></i><br><span class="hiding">Features</span></a>
                     </li>
                     <li>
-                        <a href="#team"><span class="hiding">Team</span><i class="ion-ios-people-outline"></i></a>
+                        <a href="#team"><i class="ion-ios-people-outline"></i><br><span class="hiding">Team</span></a>
                     </li>
                     <li>
-                        <a href="#contact"><span class="hiding">Contact</span><i class="ion-ios-at-outline"></i></a>
+                        <a href="#contact"><i class="ion-ios-at-outline"></i><br><span class="hiding">Contact</span></a>
                     </li>
                     <li>
                         <a href="#openModal" onclick="openModal()">Sign up</a>
                     </li>
+
+                    <!--WYKOMENTOWANE MENU JEST TYM ORYGINALNYM PRZED ZMIANAMI (ZAMIENILEM STRONAMI IKONKI I TEKST I DODALEM <br>)-->
+
+                    <!--<li>-->
+                        <!--<a href="#banner"><i class="ion-ios-home-outline"></i><br><span class="hiding">Home</span></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#description"><span class="hiding">About</span><i class="ion-ios-more-outline"></i></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#features"><span class="hiding">Features</span><i class="ion-ios-star-outline"></i></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#team"><span class="hiding">Team</span><i class="ion-ios-people-outline"></i></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#contact"><span class="hiding">Contact</span><i class="ion-ios-at-outline"></i></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#openModal" onclick="openModal()">Sign up</a>-->
+                    <!--</li>-->
                 </ul>
             </nav>
             <div class="clear"></div>
@@ -132,24 +155,34 @@
         <h2>Team</h2>
         <div class="person daniel">
             <h3>Daniel</h3>
-            <p>Tworzenie stron sprawia<br>
-                mi wielką frajdę. Po za tym uwielbiam piłkę nożną,
-                koszykówkę i dobrą książkę. </p>
+            <!--<p> Tworzenie stron sprawia<br>-->
+                <!--mi wielką frajdę. Po za tym uwielbiam piłkę nożną,-->
+                <!--koszykówkę i dobrą książkę. </p>-->
+            <p>Creating sides causes
+                for me great fun. After behind it I am loving
+                the basketball and the good book.</p>
         </div>
         <div class="person marta">
             <h3>Marta</h3>
-            <p>Przede wszystkim<br>kocham estetykę i prostotę.
-                Pasjonuję się ideą slow life i projektowaniem.</p>
+            <!--<p>Przede wszystkim<br>kocham estetykę i prostotę.-->
+                <!--Pasjonuję się ideą slow life i projektowaniem.</p>-->
+            <p>Above all
+                I love aesthetics and the simplicity.
+                I am fascinated by an idea slow life and with design.</p>
         </div>
         <div class="person marcin">
             <h3>Marcin</h3>
-            <p>Uwielbiam piłkę nożną. Tworzenie stron jest
-                dla mnie niesamowitą przygodą pełną wyzwań.</p>
+            <!--<p>Uwielbiam piłkę nożną. Tworzenie stron jest-->
+                <!--dla mnie niesamowitą przygodą pełną wyzwań.</p>-->
+            <p>I am loving the football.
+            Creating sides is remarkable adventure full of challenges for me.</p>
         </div>
         <div class="person pawel">
             <h3>Paweł</h3>
-            <p>Moją pasją jest odnawianie archaicznych projektów.
-                Uwielbiam ruch i energiczne działanie.</p>
+            <!--<p>Moją pasją jest odnawianie archaicznych projektów.-->
+                <!--Uwielbiam ruch i energiczne działanie.</p>-->
+            <p>Modernizing archaic plans is my passion.
+            I am loving the move and the energetic activity.</p>
         </div>
     </div>
 </section>
@@ -183,25 +216,40 @@
         <div class="close" onclick="closeModal()"></div>
         <h3>Make it happen</h3>
         <p>Don't live us without becoming an Lora insider</p>
-        <form action="">
+        <form id="formularz" action="">
             <label for="name-field">Name</label>
             <input id="name-field"
-                   name="user-name"
+                   name="nameFirst"
                    required
                    pattern="[A-Z]{5[0-9{5}"
                    type="text"/>
             <div class="clear"></div>
             <label for="email-field">E-mail</label>
-            <input type="email" id="email-field" name="email-adress"
+            <input type="email" id="email-field" name="adressFirst"
                    required
                    pattern="[A-Z]{5[0-9{5}"
             />
             <div class="clear"></div>
-            <label><input type="checkbox">Nie jestem robotem :)</label>
-            <input type="submit" value="send" onclick="test()">
+            <label><input type="checkbox" name="remember" value="1">Nie jestem robotem :)</label>
+            <input type="submit" id="guzik" value="send" onclick="sprawdz_formularz()">
+
         </form>
     </div>
 </div>
+<!--#####################   GAME   w#############################-->
+<!--<div id="openGame" class="modelGame">-->
+    <!--<div id="board" onclick="closeGame()">-->
+        <!--<div class="closeGame"></div>-->
+        <!--<div id="area"></div>-->
+
+        <!--<div id="score">-->
+            <!--<h3>Wynik:</h3><h4 id="result">0</h4>-->
+            <!--<h3>Pozostało:</h3><h4><span id="time">30</span></h4>-->
+        <!--</div>-->
+        <!--<div class="clear"></div>-->
+    <!--</div>-->
+<!--</div>-->
+
 
 <section id="cookie-warn">
     <p><strong>UWAGA!</strong>

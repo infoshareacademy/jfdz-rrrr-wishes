@@ -1,7 +1,7 @@
 /**
  * Created by martastachecka on 18.06.16.
  */
-
+/*####################  MODEL WINDOW    ################*/
 closeModal = function() {
     $('#openModal').hide();
 };
@@ -9,6 +9,217 @@ closeModal = function() {
 openModal = function() {
     $('#openModal').show();
 };
+
+/*####################  MODEL GAME    ################*/
+//
+// closeGame = function () {
+//     $('#openGame').hide();
+// };
+//
+// openGame = function () {
+//     $('#openGame').show();
+// };
+// /*####################  GAME    ################*/
+//
+// //maksymalne i minimalne wymiary boksu
+//     var boxMaxWidth = boxMaxHeight = 50;
+//     var boxMinWidth = boxMinHeight = 50;
+//
+// // tablica z dostępnymi kolorami dla boksu
+//     var boxBackgrounds = ["green", "red", "blue", "black", "pink"];
+//
+// //tablica skupiająca wszystkie boksy
+//     var boxContainer = [];
+//
+// //początkowa liczba boksów
+//     var boxStartingCount = 5;
+//
+// // maksymalna liczba boksów losowana po “ustrzeleniu” któregoś z nich
+//     var boxAdditionalMaxCount = 1;
+//
+// //odnośnik do funkcji moveBox, uruchamianej cyklicznie
+//     var boxMovement;
+//
+// // liczba pikseli w ruchu poziomym i pionowym
+//     var boxMovementHorizontal = boxMovementVertical = 10;
+//
+// //obiekt, przechowujący pozycje pola gry
+//     var areaPosition = {};
+//
+// //obiekt, przechowujący wymiary pola gry
+//     var areaSize = {};
+//
+// //odnośnik do funkcji executeTimer, wywoływanej cyklicznie
+//     var gameTimer;
+// //true/false, informuje, czy gra działa, czy jest skończona
+//     var gameOver = false;
+//
+// //tworzy i elementów (boksów) w obszarze #area.
+// function createBoxes(i)
+// {
+//
+//     for (var x = 0;x < parseInt(i); x++)
+//     {
+//         var div = $("<div></div>");
+//
+//         var sizes = setBoxRandomSize(div);
+//         setBoxRandomPosition(div);
+//         setBoxRandomBackground(div);
+//
+//         var date = new Date();
+//         var id = new String(""+sizes.height+""+date.getTime()+"");
+//
+//         div.attr("id", id);
+//
+//         boxContainer[id] = [];
+//
+//         var arrow = Math.floor(2*Math.random())+1;
+//         boxContainer[id]['x'] = 'right';
+//
+//         if (arrow == 1)
+//         {
+//             boxContainer[id]['x'] = 'left';
+//         }
+//
+//         var arrow = Math.floor(2*Math.random())+1;
+//
+//         boxContainer[id]['y'] = 'bottom';
+//         if (arrow == 1)
+//         {
+//             boxContainer[id]['y'] = 'top';
+//         }
+//
+//         boxContainer[id]['w'] = sizes.width;
+//         boxContainer[id]['h'] = sizes.height;
+//
+//
+//         div.click(function(e)
+//         {
+//             if (!gameOver)
+//             {
+//                 $(this).hide("slow", function()
+//                 {
+//                     $(this).remove();
+//                     $("#result").text(parseInt($("#result").text())+1);
+//                     createBoxes(Math.floor(boxAdditionalMaxCount*Math.random())+1);
+//                 });
+//             }
+//         });
+//
+//         $("#area").append(div);
+//
+//     }
+// }
+// //losuje wartości height i width dla obiektu DOM jQuery obj. Zwraca wylosowane liczby.
+// function setBoxRandomSize(obj)
+// {
+//     var height = Math.floor((boxMaxHeight-boxMinHeight+1)*Math.random())+boxMinHeight;
+//     var width = Math.floor((boxMaxWidth-boxMinWidth+1)*Math.random())+boxMinWidth;
+//
+//     obj.css({"height": height, "width": width});
+//
+//     return {"height": height, "width": width};
+// }
+// // losuje pozycje boksu (obiekt DOM jQuery) i zwraca uzyskane wartości.
+// function setBoxRandomPosition(obj)
+// {
+//
+//     var left = Math.floor((areaSize.w-parseInt(obj.css("width")))*Math.random())+areaPosition.left;
+//     var top = Math.floor((areaSize.h-parseInt(obj.css("height")))*Math.random())+areaPosition.top;
+//
+//     obj.css({"position": "absolute", "left": left +"px", "top": top +"px"});
+// }
+// //losuje kolor tła dla obiektu DOM jQuery obj.
+// function setBoxRandomBackground(obj)
+// {
+//     var background = Math.floor(Math.random()*boxBackgrounds.length);
+//     obj.css("background-color", boxBackgrounds[background]);
+// }
+// //odpowiada za licznik czasu gry.
+// function executeTimer()
+// {
+//     var time = parseInt($("#time").text());
+//
+//     if (time-1 > -1)
+//     {
+//         $("#time").text(time-1);
+//         return false;
+//     }
+//
+//     window.clearInterval(gameTimer);
+//     window.clearInterval(boxMovement);
+//     gameOver = true;
+//
+// }
+// //wprawia w ruch każdy z elementów.
+// function moveBoxes()
+// {
+//     for (k in boxContainer)
+//     {
+//         var top = parseInt($("#"+k).css("top"));
+//         var left = parseInt($("#"+k).css("left"));
+//
+//         if (boxContainer[k]['y'] == 'top')
+//         {
+//             var top = top-boxMovementVertical;
+//         }
+//         else
+//         {
+//             var top = top+boxMovementVertical;
+//         }
+//         if (boxContainer[k]['x'] == 'left')
+//         {
+//             var left = left-boxMovementHorizontal;
+//         }
+//         else
+//         {
+//             var left = left+boxMovementHorizontal;
+//         }
+//
+//         if (left <= areaPosition.left)
+//         {
+//             boxContainer[k]['x'] = 'right';
+//             var left = areaPosition.left;
+//         }
+//         if (left+boxContainer[k]['w'] >= areaPosition.left+areaSize.w)
+//         {
+//             boxContainer[k]['x'] = 'left';
+//             var left = areaPosition.left+areaSize.w-boxContainer[k]['w'];
+//         }
+//
+//         if (top < areaPosition.top)
+//         {
+//             boxContainer[k]['y'] = 'bottom';
+//             var top = 0;
+//         }
+//         if (top+boxContainer[k]['h'] >= areaSize.h+areaPosition.top)
+//         {
+//             boxContainer[k]['y'] = 'top';
+//             var top = areaPosition.top+areaSize.h-boxContainer[k]['h'];
+//         }
+//
+//
+//         $("#"+k).css({"left": left, "top": top});
+//     }
+//
+// }
+// $().ready(function()
+// {
+//     areaPosition = $("#area").position();
+//     areaSize.w = $("#area").width();
+//     areaSize.h = $("#area").height();
+//
+//     createBoxes(boxStartingCount);
+//
+//     boxMovement = window.setInterval("moveBoxes()", 200);
+//     gameTimer = window.setInterval("executeTimer()", 1000);
+//
+// });
+// ######################   END GAME    #######################################
+
+
+
+
 /* smooth przewijanie pomi�dzy sekcjami pomija link do otworzenia okienka modal*/
 $(function() {
     $('a[href*=#]:not([href=#]):not([href=#openModal])').click(function() {
@@ -24,6 +235,39 @@ $(function() {
         }
     });
 });
+//####################KOMUNIKAT PO WYSLANIU FORMULARZA###########################
+function sprawdz_formularz()
+{
+    // przypisanie obiektu formularza do zmiennej
+    var f = document.forms['formularz'];
+    // sprawdzenie imienia
+    if (f.nameFirst.value == '')
+    {
+        f.nameFirst.focus();
+        return false;
+    }
+    // sprawdzenie Email
+    if (f.adressFirst.value == '')
+    {
+        f.adressFirst.focus();
+        return false;
+    }
+    if(!f.remember.checked == true){
+
+        alert('nie zaznaczyles pola!');
+        return false;
+    }
+    else
+    {
+        alert("Dziekuje... :) ");
+        return true;
+    }
+    // formularz jest wypelniony poprawnie
+    return true;
+}
+
+//####################END KOMUNIKAT PO WYSLANIU FORMULARZA END  #####
+
 
 /* zr�b transprentne menu podczas przewijania*/
 document.addEventListener('scroll', function() {
@@ -97,4 +341,15 @@ document.addEventListener('scroll', function() {
 
     }
 });
+//############ Po najechaniu myszka na obrazek w sekcji TEAM ##########
+$(document).ready(function() {
+    // $('.person h3').css('opacity', 1);
+    // $('.person h3').css('cursor', 'pointer');
 
+    $('.person h3').hover(function() { //kursor wchodzi
+        $(this).stop().animate({'opacity': 0.5}, "slow").css({color:'black'});
+    },function() { //kursor wychodzi
+        $(this).stop().animate({'opacity': 1}, "slow").css({color: ''});
+    });
+});
+//##################### END ####################

@@ -66,6 +66,7 @@
     /*po najechaniu kursorem dodaje efekt rozmycia */
     .hiding{
         display: none;
+        font-size:0px;
     }
     .menu ul li:last-child{
         display: none;

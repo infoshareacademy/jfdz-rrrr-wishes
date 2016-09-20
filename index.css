@@ -40,23 +40,24 @@ video {
     background-color: rgba(38, 50, 56, 0.0);
 }
 .smaller-height-navigation{
-    height:60px;
-
+    height:50px;
     }
 .smaller-height-navigation .logo{
     height:15px;
     font-size:15px;
     line-height:19px;
     padding-left:30px;
-    margin:10px 15px;
+    margin:15px 15px;
 }
 .smaller-height-navigation .menu a {
     font-size: 10px;
+    line-height:10px;
 }
 
 .smaller-height-navigation .menu li {
     margin-top: 5px;
     margin-right: 50px;
+    line-height:10px;
    }
 /*#########probka ze slideshow###########*/
 #slideshow {
@@ -674,7 +675,7 @@ input[type=checkbox]{
 
 }
 /*######################################    MEDIA   ###############################################*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     .menu{
       width: auto;
     }
@@ -701,7 +702,6 @@ input[type=checkbox]{
         text-shadow:2px 2px 0 gray;
     }
     .hiding{
-        /*display: none;*/
     }
     .menu ul li:last-child{
         display: none;

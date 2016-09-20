@@ -317,18 +317,11 @@ video {
     flex-flow: row wrap;
     box-shadow: 0px 10px 19px -9px rgba(87,66,87,1);
     opacity:1;
-    transition-property:background-color;
-    transition-duration:2s;
-
-    -webkit-transition-property:background-color;
-    -webkit-transition-duration:2s;
 }
 .team-wrapper{
     margin:0 auto!important;
 }
-#team:hover{
-    background-color: #CCCCCC;
-}
+
 
 #team h2 {
     font-family:'Lora',Baskerville,serif;
@@ -733,60 +726,4 @@ input[type=checkbox]{
 .ion-ios-star-outline{
     font-size: 20px;
     visibility: hidden;
-}
-
-/*############################# GAME ###################################*/
-
-.modelGame{
-    position: fixed;
-    /*ODKOMENTOWAC POTEM*/
-    /*top:0;*/
-    /*bottom: 0;*/
-    /*right: 0;*/
-    /*left: 0;*/
-    top:5%;
-    bottom: 5%;
-    right: 5%;
-    left: 5%;
-    background: rgba(0,0,0,0.6);
-
-}
-#board{
-    width: 680px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    background-color: #F88989;
-    z-index: 99999;
-    position: relative;
-}
-
-#area{
-    width: 500px;
-    height: 400px;
-    border: 1px solid black;
-    background-color: lightgray;
-    float: left;
-}
-#score
-{
-    width: 100px;
-    font-size: 15px;
-    background-color: yellowgreen;
-    float: left;
-}
-
-.closeGame {
-    background-image:url('images/icon-close-modal-window-white.png');
-    background-repeat:no-repeat;
-    background-size: contain;
-
-    height:35px;
-    width:35px;
-    line-height: 25px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
 }

@@ -10,6 +10,8 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="index.css" type="text/css"/>
+    <link href="Cupid-death/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="Cupid-death/game.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="sandbox/Daniel/ikonki/css/ionicons.css">
     <!--NARAZIE TAKIE PRZEKIRUNKOWANIE POTEM TRZEBA TO ZMIENIC-->
 </head>
@@ -26,8 +28,6 @@
         <header id="page-section-header" class="page-section-header">
             <div class="clear"></div>
             <div class="logo left">Lora</div>
-            <!--DODANIE IKONEK-->
-            <!--DODALEM CLSS="ANI" TYLKO NA TESTY-->
             <nav class="menu right">
                 <ul>
                     <li>
@@ -49,26 +49,6 @@
                         <a href="#openModal" onclick="openModal()">Sign up</a>
                     </li>
 
-                    <!--WYKOMENTOWANE MENU JEST TYM ORYGINALNYM PRZED ZMIANAMI (ZAMIENILEM STRONAMI IKONKI I TEKST I DODALEM <br>)-->
-
-                    <!--<li>-->
-                        <!--<a href="#banner"><i class="ion-ios-home-outline"></i><br><span class="hiding">Home</span></a>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<a href="#description"><span class="hiding">About</span><i class="ion-ios-more-outline"></i></a>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<a href="#features"><span class="hiding">Features</span><i class="ion-ios-star-outline"></i></a>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<a href="#team"><span class="hiding">Team</span><i class="ion-ios-people-outline"></i></a>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<a href="#contact"><span class="hiding">Contact</span><i class="ion-ios-at-outline"></i></a>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<a href="#openModal" onclick="openModal()">Sign up</a>-->
-                    <!--</li>-->
                 </ul>
             </nav>
             <div class="clear"></div>
@@ -152,34 +132,24 @@
         <h2>Team</h2>
         <div class="person daniel">
             <h3>Daniel</h3>
-            <!--<p> Tworzenie stron sprawia<br>-->
-                <!--mi wielką frajdę. Po za tym uwielbiam piłkę nożną,-->
-                <!--koszykówkę i dobrą książkę. </p>-->
-            <p>Creating sides causes
-                for me great fun. After behind it I am loving
-                the basketball and the good book.</p>
+            <p>Creating sites is my greater passion. After hours I love
+             basketball and the good books.</p>
         </div>
         <div class="person marta">
             <h3>Marta</h3>
-            <!--<p>Przede wszystkim<br>kocham estetykę i prostotę.-->
-                <!--Pasjonuję się ideą slow life i projektowaniem.</p>-->
-            <p>Above all
+            <p>Above all,
                 I love aesthetics and the simplicity.
-                I am fascinated by an idea slow life and with design.</p>
+                I am fascinated by an idea slow life and design.</p>
         </div>
         <div class="person marcin">
             <h3>Marcin</h3>
-            <!--<p>Uwielbiam piłkę nożną. Tworzenie stron jest-->
-                <!--dla mnie niesamowitą przygodą pełną wyzwań.</p>-->
-            <p>I am loving the football.
-            Creating sides is remarkable adventure full of challenges for me.</p>
+             <p>Football is the sense of my life.
+                Designing sites are a remarkable adventure full of challenges for me.</p>
         </div>
         <div class="person pawel">
             <h3>Paweł</h3>
-            <!--<p>Moją pasją jest odnawianie archaicznych projektów.-->
-                <!--Uwielbiam ruch i energiczne działanie.</p>-->
-            <p>Modernizing archaic plans is my passion.
-            I am loving the move and the energetic activity.</p>
+              <p>Modernizing archaic plans is my passion.
+            I love to hustle and keep my energy level on it's highest level.</p>
         </div>
     </div>
 </section>
@@ -201,7 +171,7 @@
     <div class="social-contact right">
         <a href="https://twitter.com/" class="social-icon icon-twitter"></a>
         <a href="https://www.facebook.com/infoshareacademy/" class="social-icon icon-facebook"></a>
-        <a href="https://www.instagram.com/" class="social-icon icon-instagram"></a>
+        <a class="social-icon icon-instagram" onclick="openGame()"></a>
     </div>
     <div class="clear"></div>
     <a href="#banner" class="button-back-to-top"></a>
@@ -233,21 +203,6 @@
         </form>
     </div>
 </div>
-<!--#####################   GAME   w#############################-->
-<!--<div id="openGame" class="modelGame">-->
-    <!--<div id="board" onclick="closeGame()">-->
-        <!--<div class="closeGame"></div>-->
-        <!--<div id="area"></div>-->
-
-        <!--<div id="score">-->
-            <!--<h3>Wynik:</h3><h4 id="result">0</h4>-->
-            <!--<h3>Pozostało:</h3><h4><span id="time">30</span></h4>-->
-        <!--</div>-->
-        <!--<div class="clear"></div>-->
-    <!--</div>-->
-<!--</div>-->
-
-
 <section id="cookie-warn">
     <p><strong>UWAGA!</strong>
         Niniejsza strona wykorzystuje pliki cookies.
@@ -257,8 +212,14 @@
 
         <a href="javascript:void(0);" id="close-cookie-warn">Zamknij ostrzeżenie</a></p>
 </section>
+<!--game---------------------------------------------------->
+<section id="game"></section>
+<!--game---------------------------------------------------->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="funkcje.js"></script>
+<script language="javascript" type="text/javascript" src="https://code.createjs.com/createjs-2015.11.26.min.js" ></script>
+<script language="javascript" type="text/javascript" src="Cupid-death/fastclick.js"></script>
+<script language="javascript" type="text/javascript" src="Cupid-death/init.js" ></script>
 </body>
 </html>

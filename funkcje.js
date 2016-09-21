@@ -12,7 +12,18 @@ openModal = function() {
 
 /*###############Let the game BEGIN!####################*/
 
+$(document).ready(function(){
 
+    $("a#openGame").on("click", function(){
+
+        $.post("Cupid-death/game.html", function(data){
+
+            $("#myCanvas").html(data).fadeIn();
+
+        });
+    });
+
+});
 
 
 /* smooth przewijanie pomi�dzy sekcjami pomija link do otworzenia okienka modal*/
@@ -115,8 +126,8 @@ setInterval(function() { // to do choose devtips solutions devtips
         .next()
         .fadeIn(1000)
         .end()
-        .appendTo('#slideshow');
-    v.play();
+        .appendTo('#slideshow')
+    .play();
 }, 10000);
 
 document.addEventListener('scroll', function() {
@@ -148,3 +159,4 @@ $(document).ready(function() {
     });
 });
 //##################### END ####################
+

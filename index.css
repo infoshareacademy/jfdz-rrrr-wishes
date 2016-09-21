@@ -33,9 +33,7 @@ video {
     left: 0;
     right: 0;
     z-index: 100;
-    /*wysokosc menu jest automatyczna*/
-    /*height:76px;*/
-}
+   }
 .small-page-section-header{
     background-color: rgba(38, 50, 56, 0.0);
 }
@@ -727,3 +725,10 @@ input[type=checkbox]{
     font-size: 20px;
     visibility: hidden;
 }
+/*###########################################*/
+.modal {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 999999;
+ }

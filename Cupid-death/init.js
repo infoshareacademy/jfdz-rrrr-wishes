@@ -16,8 +16,9 @@ var gameTimer;
 var gameTime = 0;
 var timerText;
 var gameFinished = false;
+var crossHair;
 
-window.onload = function ()// start when everything is loaded on the website
+window.onload = function() // start when everything is loaded on the website
 {
     /*
      *      Set up the Canvas with Size and height
@@ -237,15 +238,13 @@ function updateTime() {
     }
 }
 
-$("button.exit").click(function() {
+$(".exit").click(function() {
     $("#alert").hide();
     $( "canvas").hide();
 });
 
 
-openGame = function() {
-    $('#openModal').load("game.html #myCanvas");
-};
+
 /*
 $(function() {
     $("button.play").click(function(evt) {

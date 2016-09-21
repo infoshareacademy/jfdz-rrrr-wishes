@@ -263,7 +263,7 @@ function sprawdz_formularz()
         return true;
     }
     // formularz jest wypelniony poprawnie
-    return true;
+    
 }
 
 //####################END KOMUNIKAT PO WYSLANIU FORMULARZA END  #####

@@ -254,7 +254,19 @@ function sprawdz_formularz()
     }
     if(!f.remember.checked == true){
 
-        alert('nie zaznaczyles pola!');
+        $(function(){
+
+            $('.komunikat2').hide();
+
+            setTimeout(function(){
+                $('.komunikat2').click().fadeIn('slow');
+            },1000);
+            setTimeout(function(){
+                $('.komunikat2').click().fadeOut('slow');
+            },5000);
+
+        });
+        event.preventDefault();
         return false;
     }
     else
@@ -271,10 +283,10 @@ function sprawdz_formularz()
             },5000);
 
         });
-        // alert("Dziekuje... :) ");
+        event.preventDefault();
+
         return true;
     }
-    // formularz jest wypelniony poprawnie
     return true;
 }
 

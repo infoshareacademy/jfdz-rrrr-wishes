@@ -230,18 +230,20 @@ function updateTime() {
         clearInterval(gameTimer);
         $("#alert").show();
         gameFinished = true; // game has finished
-
-    }
+         }
     else {
         timerText.text = "Time: " + gameTime
         createjs.Sound.play("tick");
     }
 }
-
-$(".exit").click(function() {
+$("button.exit").click(function() {
     $("#alert").hide();
     $( "canvas").hide();
-});
+    });
+
+
+
+
 
 
 

@@ -1,5 +1,4 @@
 #myCanvas{
-    z-index:999999;
     display:block;
     margin:auto;
     position:absolute;
@@ -19,8 +18,4 @@
 #alert h3 {
     color: white;
     text-align: center;
-}
-#modal{
-    height:1200px;
-    width: 600px;
 }

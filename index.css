@@ -732,3 +732,36 @@ input[type=checkbox]{
     position: relative;
     z-index: 999999;
  }
+
+.komunikat{
+    width: 500px;
+    height: 150px;
+    background-color: darkslategray;
+    border: 2px solid white;
+    border-radius:10px;
+    opacity: 0.8;
+    display: none;
+    position: absolute;
+    bottom: 200px;
+    right: -50px;
+}
+.komunikat h3 {
+    text-align: center;
+    margin-top: 50px;
+}
+.komunikat2{
+    width: 500px;
+    height: 150px;
+    background-color: darkslategray;
+    border: 2px solid white;
+    border-radius:10px;
+    opacity: 0.8;
+    display: none;
+    position: absolute;
+    bottom: 200px;
+    right: -50px;
+}
+.komunikat2 h3 {
+    text-align: center;
+    margin-top: 50px;
+}

@@ -64,10 +64,10 @@ function sprawdz_formularz()
             // $('.komunikat2').hide();
             setTimeout(function(){
                 $('.komunikat2').click().fadeIn('slow');
-            },1000);
+            },300);
             setTimeout(function(){
                 $('.komunikat2').click().fadeOut('slow');
-            },5000);
+            },2500);
 
         });
         event.preventDefault();
@@ -79,10 +79,10 @@ function sprawdz_formularz()
             // $('.komunikat').hide();
             setTimeout(function(){
                 $('.komunikat').click().fadeIn('slow');
-            },1000);
+            },300);
             setTimeout(function(){
                 $('.komunikat').click().fadeOut('slow');
-            },5000);
+            },2500);
 
         });
         event.preventDefault();

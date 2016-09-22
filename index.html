@@ -189,17 +189,21 @@
                    name="nameFirst"
                    required
                    pattern="[A-Z]{5[0-9{5}"
+                   title=" "
                    type="text"/>
             <div class="clear"></div>
             <label for="email-field">E-mail</label>
             <input type="email" id="email-field" name="adressFirst"
                    required
                    pattern="[A-Z]{5[0-9{5}"
+                   title=" "
             />
             <div class="clear"></div>
             <label><input type="checkbox" name="remember" value="1">Nie jestem robotem :)</label>
             <input type="submit" id="guzik" value="send" onclick="sprawdz_formularz()">
 
+            <div class="komunikat"><h3>Dziekuje za wysłanie formularza :)</h3></div>
+            <div class="komunikat2"><h3>Nie zaznaczyłeś pola :)</h3></div>
         </form>
     </div>
 </div>

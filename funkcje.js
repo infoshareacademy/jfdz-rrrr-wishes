@@ -60,16 +60,34 @@ function sprawdz_formularz()
     }
     if(!f.remember.checked == true){
 
-        alert('nie zaznaczyles pola!');
+        $(function(){
+            // $('.komunikat2').hide();
+            setTimeout(function(){
+                $('.komunikat2').click().fadeIn('slow');
+            },1000);
+            setTimeout(function(){
+                $('.komunikat2').click().fadeOut('slow');
+            },5000);
+
+        });
+        event.preventDefault();
         return false;
     }
     else
     {
-        alert("Dziekuje... :) ");
+        $(function(){
+            // $('.komunikat').hide();
+            setTimeout(function(){
+                $('.komunikat').click().fadeIn('slow');
+            },1000);
+            setTimeout(function(){
+                $('.komunikat').click().fadeOut('slow');
+            },5000);
+
+        });
+        event.preventDefault();
         return true;
     }
-    // formularz jest wypelniony poprawnie
-    return true;
 }
 
 //####################END KOMUNIKAT PO WYSLANIU FORMULARZA END  #####

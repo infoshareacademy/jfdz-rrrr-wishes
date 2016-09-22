@@ -8,17 +8,13 @@
     display: none;
     position: absolute;
     z-index: 9999;
-    top:100px;
-    left: 300px;
-    height: 350px;
-    width: 400px;
-    margin: 10% auto;
+    height: 600px;
+    width: 1024px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #85488c;
-    box-shadow: 0px 7px 56px 1px rgba(248,137,137,0.77);
-    border-radius: 10px;
+    background: #292d43;
+    opacity:0.8;
 }
 
 #alert h3{
@@ -27,9 +23,15 @@
     font-weight:400;
     font-size:20px;
     color:white;
-    letter-spacing:2px;}
+    letter-spacing:2px;
+    margin-bottom:10px;
+    margin-top:250px;
+}
+
 
 .exit{
+    position:absolute;
+    left:471px;
     text-align:center;
     text-decoration:none;
     color:white;
@@ -37,8 +39,6 @@
     font-weight:400;
     font-style:italic;
     font-size:14px;
-    line-height:22px;
-    padding-bottom:22px;
-    padding-left:180px;
+    line-height:14px;
     opacity:0.7;
 }

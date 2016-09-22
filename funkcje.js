@@ -259,7 +259,19 @@ function sprawdz_formularz()
     }
     else
     {
-        alert("Dziekuje... :) ");
+        $(function(){
+
+            $('.komunikat').hide();
+
+            setTimeout(function(){
+                $('.komunikat').click().fadeIn('slow');
+            },1000);
+            setTimeout(function(){
+                $('.komunikat').click().fadeOut('slow');
+            },5000);
+
+        });
+        // alert("Dziekuje... :) ");
         return true;
     }
     // formularz jest wypelniony poprawnie

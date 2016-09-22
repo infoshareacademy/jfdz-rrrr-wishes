@@ -726,9 +726,3 @@ input[type=checkbox]{
     visibility: hidden;
 }
 /*###########################################*/
-.modal {
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    z-index: 999999;
- }

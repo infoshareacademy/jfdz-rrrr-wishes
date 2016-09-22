@@ -255,9 +255,7 @@ function sprawdz_formularz()
     if(!f.remember.checked == true){
 
         $(function(){
-
-            $('.komunikat2').hide();
-
+            // $('.komunikat2').hide();
             setTimeout(function(){
                 $('.komunikat2').click().fadeIn('slow');
             },1000);
@@ -272,9 +270,7 @@ function sprawdz_formularz()
     else
     {
         $(function(){
-
-            $('.komunikat').hide();
-
+            // $('.komunikat').hide();
             setTimeout(function(){
                 $('.komunikat').click().fadeIn('slow');
             },1000);
@@ -284,10 +280,8 @@ function sprawdz_formularz()
 
         });
         event.preventDefault();
-
         return true;
     }
-    return true;
 }
 
 //####################END KOMUNIKAT PO WYSLANIU FORMULARZA END  #####

@@ -61,8 +61,7 @@ function sprawdz_formularz()
     if(!f.remember.checked == true){
 
         $(function(){
-            // $('.komunikat2').hide();
-            setTimeout(function(){
+              setTimeout(function(){
                 $('.komunikat2').click().fadeIn('slow');
             },300);
             setTimeout(function(){
@@ -76,8 +75,7 @@ function sprawdz_formularz()
     else
     {
         $(function(){
-            // $('.komunikat').hide();
-            setTimeout(function(){
+                setTimeout(function(){
                 $('.komunikat').click().fadeIn('slow');
             },300);
             setTimeout(function(){
@@ -140,12 +138,7 @@ var v = document.getElementsByTagName("video")[0];
 
 setInterval(function() { // to do choose devtips solutions devtips
     $('#slideshow > div:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo('#slideshow')
-    .play();
+        .fadeOut(1000).next().fadeIn(1000).end().appendTo('#slideshow').play();
 }, 10000);
 
 document.addEventListener('scroll', function() {
@@ -167,14 +160,12 @@ document.addEventListener('scroll', function() {
 });
 //############ Po najechaniu myszka na obrazek w sekcji TEAM ##########
 $(document).ready(function() {
-    // $('.person h3').css('opacity', 1);
-    // $('.person h3').css('cursor', 'pointer');
-
-    $('.person h3').hover(function() { //kursor wchodzi
+     $('.person h3').hover(function() { //kursor wchodzi
         $(this).stop().animate({'opacity': 0.5}, "slow").css({color:'black'});
     },function() { //kursor wychodzi
         $(this).stop().animate({'opacity': 1}, "slow").css({color: ''});
     });
 });
 //##################### END ####################
+
 

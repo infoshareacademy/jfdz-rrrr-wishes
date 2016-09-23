@@ -103,7 +103,7 @@ video {
     font-size: 12px;
     letter-spacing: 1px;
     font-family: 'Raleway',sans-serif,arial;
-    transition:font-size 0.25s, font-weight 0.25s, color 0.25s;
+    transition:font-size 0.25s;
 }
 .menu a:hover{
     color:#FC7753;
@@ -315,6 +315,7 @@ video {
     flex-flow: row wrap;
     box-shadow: 0px 10px 19px -9px rgba(87,66,87,1);
     opacity:1;
+    transition-property:background-color;
     transition-duration:2s;
 
     -webkit-transition-property:background-color;
@@ -734,43 +735,41 @@ input[type=checkbox]{
 }
 /*###########################################*/
 .modal {
-    position: fixed;
     display: inline-block;
     vertical-align: middle;
+    position: relative;
     z-index: 999999;
  }
 
 .komunikat{
-    width: 400px;
-    height: 350px;
+    width: 500px;
+    height: 150px;
     background-color: darkslategray;
+    border: 2px solid white;
     border-radius:10px;
-    opacity: 0.9;
+    opacity: 0.8;
     display: none;
-  position: absolute;
-    top:0px;
+    position: absolute;
     bottom: 200px;
-    left: 0px;
+    right: -50px;
 }
 .komunikat h3 {
-    margin-top:150px;
     text-align: center;
-
+    margin-top: 50px;
 }
 .komunikat2{
-    width: 400px;
-    height: 350px;
+    width: 500px;
+    height: 150px;
     background-color: darkslategray;
+    border: 2px solid white;
     border-radius:10px;
-    opacity: 0.9;
+    opacity: 0.8;
     display: none;
-   position: absolute;
-    top:0px;
-   bottom: 200px;
-    left: 0px;
+    position: absolute;
+    bottom: 200px;
+    right: -50px;
 }
 .komunikat2 h3 {
     text-align: center;
-    margin-top:150px;
-    line-height:25px;
+    margin-top: 50px;
 }

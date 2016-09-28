@@ -42,6 +42,59 @@ $(function() {
     });
 });
 //####################KOMUNIKAT PO WYSLANIU FORMULARZA###########################
+$.ajax({
+    method: "POST",
+    url: "http://tools.is-academy.pl/mailer.php",
+    success:function sprawdz_formularz() {
+
+        var f = document.forms['formularz'];// przypisanie obiektu formularza do zmiennej
+
+        if (f.nameFirst.value == '')// sprawdzenie imienia
+        {
+            f.nameFirst.focus();
+            return false;
+        }
+
+        if (f.adressFirst.value == '') // sprawdzenie Email
+        {
+            f.adressFirst.focus();
+            return false;
+        }
+        if (!f.remember.checked == true) {
+
+            $(function () {
+                setTimeout(function () {
+                    $('.komunikat2').click().fadeIn('slow');
+                }, 300);
+                setTimeout(function () {
+                    $('.komunikat2').click().fadeOut('slow');
+                }, 2500);
+
+            });
+            event.preventDefault();
+            return false;
+        }
+        else {
+            $(function () {
+                setTimeout(function () {
+                    $('.komunikat').click().fadeIn('slow');
+                }, 300);
+                setTimeout(function () {
+                    $('.komunikat').click().fadeOut('slow');
+                }, 2500);
+
+            });
+            event.preventDefault();
+            return true;
+        }
+    }
+});
+
+
+
+/*
+
+
 function sprawdz_formularz()
 {
     // przypisanie obiektu formularza do zmiennej
@@ -86,7 +139,7 @@ function sprawdz_formularz()
         event.preventDefault();
         return true;
     }
-}
+}*/
 
 //####################END KOMUNIKAT PO WYSLANIU FORMULARZA END  #####
 
@@ -138,7 +191,7 @@ var v = document.getElementsByTagName("video")[0];
 
 setInterval(function() { // to do choose devtips solutions devtips
     $('#slideshow > div:first')
-        .fadeOut(1000).next().fadeIn(1000).end().appendTo('#slideshow').play();
+        .fadeOut(1000).next().fadeIn(1000).end().appendTo('#slideshow').get(0).play();
 }, 10000);
 
 document.addEventListener('scroll', function() {

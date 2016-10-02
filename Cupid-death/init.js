@@ -217,7 +217,7 @@ function handleMouseDown(event) {
 
 function updateTime() {
     gameTime += 1;
-    if (gameTime > 30) {
+    if (gameTime > 20) {
         //End Game and Clean up
         timerText.text = "GAME OVER";
         stage.removeChild(deathAnimation);

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -9,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,200' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="index.css" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="sandbox/Daniel/ikonki/css/ionicons.css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+
     <!--NARAZIE TAKIE PRZEKIRUNKOWANIE POTEM TRZEBA TO ZMIENIC-->
 </head>
 <body>
@@ -29,19 +29,19 @@
             <nav class="menu right">
                 <ul>
                     <li>
-                        <a href="#banner"><i class="ion-ios-home-outline"></i><br><span class="hiding">Home</span></a>
+                        <a href="#banner"><i class="ion-ios-home-outline hiding"></i><br>Home</a>
                     </li>
                     <li>
-                        <a href="#description"><i class="ion-ios-more-outline"></i><br><span class="hiding">About</span></a>
+                        <a href="#description"><i class="ion-ios-more-outline hiding"></i><br>About</a>
                     </li>
                     <li>
-                        <a href="#features"><i class="ion-ios-star-outline"></i><br><span class="hiding">Features</span></a>
+                        <a href="#features"><i class="ion-ios-star-outline hiding"></i><br>Features</a>
                     </li>
                     <li>
-                        <a href="#team"><i class="ion-ios-people-outline"></i><br><span class="hiding">Team</span></a>
+                        <a href="#team"><i class="ion-ios-people-outline hiding"></i><br>Team</a>
                     </li>
                     <li>
-                        <a href="#contact"><i class="ion-ios-at-outline"></i><br><span class="hiding">Contact</span></a>
+                        <a href="#contact"><i class="ion-ios-at-outline hiding"></i><br>Contact</a>
                     </li>
                     <li>
                         <a href="#openModal" onclick="openModal()">Sign up</a>
@@ -182,7 +182,7 @@
         <div class="close" onclick="closeModal()"></div>
         <h3>Make it happen</h3>
         <p>Don't live us without becoming an Lora insider</p>
-        <form id="formularz">
+        <form id="formularz" action="http://tools.is-academy.pl/mailer.php" method="POST">
             <label for="name-field">Name</label>
             <input id="name-field"
                    name="nameFirst"

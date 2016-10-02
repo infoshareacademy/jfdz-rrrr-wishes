@@ -42,7 +42,7 @@ $(function() {
     });
 });
 //####################KOMUNIKAT PO WYSLANIU FORMULARZA###########################
-$.ajax({
+/*$.ajax({
     method: "POST",
     url: "http://tools.is-academy.pl/mailer.php",
     success:function sprawdz_formularz() {
@@ -89,10 +89,10 @@ $.ajax({
         }
     }
 });
+*/
 
 
 
-/*
 
 
 function sprawdz_formularz()
@@ -139,7 +139,7 @@ function sprawdz_formularz()
         event.preventDefault();
         return true;
     }
-}*/
+}
 
 //####################END KOMUNIKAT PO WYSLANIU FORMULARZA END  #####
 
